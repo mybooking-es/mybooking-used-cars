@@ -385,9 +385,17 @@
   text-overflow: ellipsis;
 }
 
-.mybooking-used-cars_card-price {
+.mybooking-used-cars_card-price-price {
   color: var(--brand-primary, var(--mb-camper-accent-color));
   font-size: 1.3em;
+  line-height: 1.5rem;
+  font-weight: 800;
+}
+
+.mybooking-used-cars_card-price-single_price {
+  margin-top: 1.5rem;
+  color: var(--brand-primary, var(--mb-camper-accent-color));
+  font-size: 1.7em;
   line-height: 1.5rem;
   font-weight: 800;
 }
@@ -496,7 +504,7 @@
 }
 
 .mybooking-used-cars_price {
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight: bolder;
   color: var(--brand-primary, var(--mb-camper-accent-color))
 }

@@ -164,7 +164,7 @@ function mybooking_used_cars_enqueue_admin_scripts( $hook ) {
 }
 add_action( 'admin_enqueue_scripts', 'mybooking_used_cars_enqueue_admin_scripts' );
 
-function enqueue_validation_script( $hook ) {
+function mybooking_used_cars_enqueue_validation_script( $hook ) {
     if ( $hook === 'post.php' || $hook === 'post-new.php' ) {
         // Asegúrate de que jQuery está cargado
         wp_enqueue_script( 'jquery' );
@@ -195,7 +195,7 @@ function enqueue_validation_script( $hook ) {
         );
     }
 }
-add_action( 'admin_enqueue_scripts', 'enqueue_validation_script' );
+add_action( 'admin_enqueue_scripts', 'mybooking_used_cars_enqueue_validation_script' );
 
 /**
 * AJAX to retrieve brand models 
@@ -231,3 +231,36 @@ function mybooking_get_models_ajax() {
     wp_send_json_success( $models_data );
 }
 add_action( 'wp_ajax_mybooking_get_models', 'mybooking_get_models_ajax' );
+
+/**
+ * Enqueue scripts and styles for the used car gallery
+ */
+function mybooking_used_car_enqueue_gallery() {
+    if (is_singular('used-car')) { // Asegúrate de que solo se cargue en la página de detalle
+        // Load CSS
+        wp_enqueue_style('mybooking-used-car-gallery-css', plugin_dir_url( __FILE__ ) . '/assets/css/mybooking-used-cars-gallery.css');
+        
+        // Load JS
+        wp_enqueue_script('mybooking-used-car-gallery-js', plugin_dir_url( __FILE__ ) . '/assets/js/mybooking-used-cars-gallery.js', array(), null, true);
+    }
+}
+add_action('wp_enqueue_scripts', 'mybooking_used_car_enqueue_gallery');
+
+/**
+ * Enqueue scripts and styles for the brand taxonomy
+ */
+function mybooking_enqueue_taxonomy_scripts($hook) {
+    // Carga scripts sólo en la página de taxonomías
+    $screen = get_current_screen();
+    if ($screen && $screen->taxonomy === 'brand' && $screen->base === 'edit-tags') {
+        // Encola el archivo JS
+        wp_enqueue_script(
+            'brand-taxonomy-js', // Handle único
+            plugin_dir_url( __FILE__ ) . 'includes/assets/js/mybooking-used-cars-brand-taxonomy.js', // Ruta del archivo
+            ['jquery'], // Dependencias
+            '1.0.0', // Versión
+            true // Cargar en el footer
+        );
+    }
+}
+add_action('admin_enqueue_scripts', 'mybooking_enqueue_taxonomy_scripts');

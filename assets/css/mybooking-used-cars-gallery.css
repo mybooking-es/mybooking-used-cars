@@ -1,0 +1,74 @@
+.mybooking-used-cars-carousel-container {
+  text-align: center;
+}
+
+.mybooking-used-cars-main-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mybooking-used-cars_carousel {
+  display: flex;
+  justify-content: flex-start; /* Alinea las miniaturas al principio */
+  margin-top: 20px;
+  
+  /* Limitar la altura del carrusel */
+  height: 120px; /* Ajusta la altura del carrusel */
+  overflow-x: auto; /* Permite el scroll horizontal */
+  overflow-y: hidden; /* Elimina el scroll vertical */
+  
+  /* Mostrar el scroll solo al hacer hover */
+  scrollbar-width: thin; /* Para Firefox */
+  scrollbar-color: transparent transparent; /* Para Firefox */
+  padding-bottom: 10px; /* Espacio en la parte inferior */
+}
+
+/* Agregar el hover para mostrar el scroll */
+.mybooking-used-cars_carousel:hover {
+  scrollbar-color: #888 #f1f1f1; /* El color del scroll */
+  scrollbar-width: auto; /* Activamos el scroll */
+}
+
+/* Estilos para los items del carrusel */
+.mybooking-used-cars_carousel-item {
+  flex-shrink: 0; /* Evita que los elementos se encojan */
+  margin-right: 10px; /* Espacio entre las miniaturas */
+  padding: 0 5px; /* Ajuste el espacio entre las miniaturas */
+  /* Eliminamos el borde en los items */
+  border-radius: 0; /* Sin borde en los items */
+  overflow: hidden; /* Asegura que el borde redondeado no afecte a las imágenes */
+}
+
+/* Miniaturas */
+.mybooking-used-cars_carousel-thumbnail {
+  max-width: 140px; /* Ancho mínimo de la miniatura */
+  height: 100px;
+  object-fit: cover; /* Hace que la imagen cubra todo el contenedor sin distorsionarse */
+  object-position: center; /* Foco centrado en la imagen */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 8px; /* Borde redondeado para las miniaturas */
+}
+
+/* Efecto hover en miniaturas */
+.mybooking-used-cars_carousel-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+/* Estilo para mostrar el scroll en navegadores modernos */
+.mybooking-used-cars_carousel::-webkit-scrollbar {
+  height: 8px; /* Ajusta la altura del scroll */
+}
+
+.mybooking-used-cars_carousel::-webkit-scrollbar-track {
+  background: transparent; /* Fondo del track */
+}
+
+.mybooking-used-cars_carousel::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del thumb */
+  border-radius: 10px;
+}
+
+.mybooking-used-cars_carousel::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color del thumb al hacer hover */
+}

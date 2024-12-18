@@ -35,7 +35,9 @@ get_header(); ?>
   $used_car_details_model = $model_term ? $model_term->name : '';	
 	$used_car_details_year = get_post_meta( $post->ID, 'used-car-details-year', true );
 	$used_car_details_kms = get_post_meta( $post->ID, 'used-car-details-kms', true );
-
+  $used_car_details_engine = get_post_meta( $post->ID, 'used-car-details-engine', true );
+  $used_car_details_gear = get_post_meta( $post->ID, 'used-car-details-gear', true );
+  $used_car_details_fuel = get_post_meta( $post->ID, 'used-car-details-fuel', true );
 ?>
 
 <div id="content">
@@ -50,97 +52,102 @@ get_header(); ?>
 					<div class="mb-row">
 						<div class="mb-col-md-12">
 							<?php echo used_cars_breadcrumbs(); ?>
-							<?php if ( empty( get_the_title() ) ) { ?>
-
-								<!-- The product no name -->
-								<h1 class="mybooking-used-cars_post-header untitled">
-									<?php echo esc_html_x('Untitled', 'content_blog', 'mybooking'); ?>
-								</h1>
-
-							<?php } else { ?>
-
-								<!-- The product name -->
-								<h1 class="mybooking-used-cars_post-header">
-									<?php echo esc_html( $used_car_details_brand ) ?> <?php echo esc_html( $used_car_details_model )?>
-
-                  <!-- The price -->
-                  <span>
-                    <?php if ( $used_car_details_price !='' ) {  ?>
-                      <div class="mybooking-used-cars_price">
-                        <?php echo esc_html( $used_car_details_price ) ?> €
-                      </div>
-                    <?php } ?>
-                  </span>
-								</h1>
-							<?php } ?>
-
 						</div>
+					</div>
 
+					<div class="mb-row">
 						<!-- The body -->
 
-						<div class="mb-col-md-8">
+						<div class="mb-col-md-7">
 
 							<!-- The images -->
 							<?php if( $used_car_details_photos_count !='' ) { ?>
-								<div class="mybooking-used-cars_carousel mybooking-product-carousel-inner">
-								<?php for( $i=0; $i<$used_car_details_photos_count; $i++ ) { ?>
-									<div class="mybooking-carousel-item">
-  									<?php
-  									    $used_car_photo = wp_get_attachment_image(
-  											$used_car_details_photos_url_array[$i],
-  											'full',
-  											false,
-  											['src', 'alt', 'class' => 'mybooking-used-cars_carousel-img']
-  										);
-  										echo wp_kses_post( $used_car_photo )
-                    ?>
+									<div class="mybooking-used-cars-carousel-container">
+											<!-- Imagen principal -->
+											<div class="mybooking-used-cars-main-image">
+													<?php
+															// Obtener la imagen principal (tamaño completo)
+															$used_car_main_image = wp_get_attachment_image(
+																	$used_car_details_photos_url_array[0], // ID de la imagen
+																	'full', // Tamaño completo de la imagen
+																	false, // No se necesita el link
+																	['class' => 'mybooking-used-cars_carousel-img', 'alt' => 'Imagen principal del coche']
+															);
+															echo wp_kses_post($used_car_main_image); // Mostrar la imagen principal
+													?>
+											</div>
+
+											<!-- Carrusel de miniaturas (thumbnails) -->
+											<div class="mybooking-used-cars_carousel mybooking-product-carousel-inner">
+													<?php for( $i=0; $i<$used_car_details_photos_count; $i++ ) { ?>
+															<div class="mybooking-used-cars_carousel-item">
+																	<?php
+																			// Obtener la miniatura de la imagen (tamaño 'thumbnail')
+																			$used_car_thumbnail = wp_get_attachment_image(
+																					$used_car_details_photos_url_array[$i], // ID de la imagen
+																					'medium', // Tamaño de la miniatura
+																					false, // No se necesita el link
+																					[
+																							'class' => 'mybooking-used-cars_carousel-thumbnail',
+																							'alt' => 'Miniatura del coche', 
+																							'data-full-size' => wp_get_attachment_url($used_car_details_photos_url_array[$i]) // URL de la imagen completa
+																					]
+																			);
+																			echo wp_kses_post($used_car_thumbnail); // Mostrar miniatura
+																	?>
+															</div>
+													<?php } ?>
+											</div>
 									</div>
-								<?php } ?>
-								</div>
 							<?php } ?>
+
 
 							<!-- The content -->
 							<div class="mybooking-used-cars_entry-content entry-content">
 								<?php the_content(); ?>
 							</div>
 
-              <!-- The video -->
-              <?php if ( $used_car_details_video !='' ) {  ?>
-                <div class="mybooking-used-cars_video">
-                  <?php echo wp_oembed_get( $used_car_details_video ); ?>
-                </div>
-              <?php } ?>
-
-							<!-- Details -->
-							<div class="mb-col-md-12">
-                <h2 class="mybooking-used-cars_section-title">
-                  <?php echo esc_html_x( 'Details', 'used-car-single', 'mybooking-used-cars' ) ?>
-                </h2>
-							</div>
 						</div>
 
 						<!-- The sidebar -->
 
-						<div class="mb-col-md-4">
+						<div class="mb-col-md-5">
 							<div class="mybooking-used-cars_sidebar">
+
+								<!-- The product name -->
+								<h1 class="mybooking-used-cars_post-header">
+									<?php echo esc_html( $used_car_details_brand ) ?> <?php echo esc_html( $used_car_details_model )?>
+								</h1>
+
+								<?php include 'used-car-details.php'; ?>		
+
+								<!-- The price -->
+								<?php if ( $used_car_details_price !='' ) {  ?>
+									<div class="mybooking-used-cars_card-price-single_price">
+										<?php echo esc_html( number_format($used_car_details_price, 0, ',', '.')  ) ?> €
+									</div>
+								<?php } ?>
+                  
+								<br>
+
+								<!-- Calendar or Form -->
+								<h2 class="mybooking-used-cars_post-subheader">
+									<?php echo esc_html_x('Contact', 'used-car-archive', 'mybooking-used-cars'); ?>
+								</h2>								 
 
 								<!-- Widgets -->
 								<?php if ( is_active_sidebar( 'sidebar-post' ) ) { ?>
 									<div class="mybooking-used-cars_single-widget-area">
 										 <?php dynamic_sidebar( 'sidebar-post' ); ?>
 									</div>
+									<br>
 								<?php } ?>
 
-                <h2 class="mybooking-used-cars_section-title">
-                  <?php echo esc_html_x( 'Book online', 'used-car-single', 'mybooking-used-cars' ) ?>
-                </h2>
+								<div class="mybooking-used-cars_product-form mb-card">
+									<?php echo do_shortcode( '[mybooking_contact]' ); ?>
+								</div>
 
-								<!-- Calendar or Form -->
-								<?php if ( $used_car_details_id !='' ) {  ?>
-									<div class="mybooking-used-cars_product-form mb-card">
-										<?php echo do_shortcode( '[mybooking_rent_engine_product code="' . $used_car_details_id . '"]' ); ?>
-									</div>
-								<?php } ?>
+
 							</div>
 						</div>
 					</div>

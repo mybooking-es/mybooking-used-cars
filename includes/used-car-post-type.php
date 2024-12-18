@@ -5,46 +5,46 @@
  *
  * @since 1.0.1
  */
-function mybooking_used_car() {
+function mybooking_create_cpt_used_car() {
 
 	$labels = array(
-		'name'                  => _x( 'Used cars', 'Post Type General Name', 'mybooking-used-cars' ),
-		'singular_name'         => _x( 'Used cars', 'Post Type Singular Name', 'mybooking-used-cars' ),
-		'menu_name'             => __( 'Used cars', 'mybooking-used-cars' ),
-		'name_admin_bar'        => __( 'Used cars', 'mybooking-used-cars' ),
-		'archives'              => __( 'Used car Archives', 'mybooking-used-cars' ),
-		'attributes'            => __( 'Used car Attributes', 'mybooking-used-cars' ),
-		'parent_item_colon'     => __( 'Parent used car:', 'mybooking-used-cars' ),
-		'all_items'             => __( 'All used cars', 'mybooking-used-cars' ),
-		'add_new_item'          => __( 'Add New used car', 'mybooking-used-cars' ),
+		'name'                  => _x( 'Vehicles', 'Post Type General Name', 'mybooking-used-cars' ),
+		'singular_name'         => _x( 'Vehicles', 'Post Type Singular Name', 'mybooking-used-cars' ),
+		'menu_name'             => __( 'Vehicles', 'mybooking-used-cars' ),
+		'name_admin_bar'        => __( 'Vehicles', 'mybooking-used-cars' ),
+		'archives'              => __( 'Vehicle Archives', 'mybooking-used-cars' ),
+		'attributes'            => __( 'Vehicle Attributes', 'mybooking-used-cars' ),
+		'parent_item_colon'     => __( 'Parent vehicle:', 'mybooking-used-cars' ),
+		'all_items'             => __( 'All vehicles', 'mybooking-used-cars' ),
+		'add_new_item'          => __( 'Add New vehicle', 'mybooking-used-cars' ),
 		'add_new'               => __( 'Add New', 'mybooking-used-cars' ),
-		'new_item'              => __( 'New used car', 'mybooking-used-cars' ),
-		'edit_item'             => __( 'Edit used car', 'mybooking-used-cars' ),
-		'update_item'           => __( 'Update used car', 'mybooking-used-cars' ),
-		'view_item'             => __( 'View used car', 'mybooking-used-cars' ),
-		'view_items'            => __( 'View used car', 'mybooking-used-cars' ),
-		'search_items'          => __( 'Search used car', 'mybooking-used-cars' ),
+		'new_item'              => __( 'New vehicle', 'mybooking-used-cars' ),
+		'edit_item'             => __( 'Edit vehicle', 'mybooking-used-cars' ),
+		'update_item'           => __( 'Update vehicle', 'mybooking-used-cars' ),
+		'view_item'             => __( 'View vehicle', 'mybooking-used-cars' ),
+		'view_items'            => __( 'View vehicle', 'mybooking-used-cars' ),
+		'search_items'          => __( 'Search vehicle', 'mybooking-used-cars' ),
 		'not_found'             => __( 'Not found', 'mybooking-used-cars' ),
 		'not_found_in_trash'    => __( 'Not found in Trash', 'mybooking-used-cars' ),
-		'featured_image'        => __( 'Used car Catalog Image', 'mybooking-used-cars' ),
-		'set_featured_image'    => __( 'Set Used car image', 'mybooking-used-cars' ),
-		'remove_featured_image' => __( 'Remove Used car image', 'mybooking-used-cars' ),
-		'use_featured_image'    => __( 'Use as Used car image', 'mybooking-used-cars' ),
-		'insert_into_item'      => __( 'Insert into Used car', 'mybooking-used-cars' ),
-		'uploaded_to_this_item' => __( 'Uploaded to this Used car', 'mybooking-used-cars' ),
-		'items_list'            => __( 'Used car list', 'mybooking-used-cars' ),
-		'items_list_navigation' => __( 'Used list navigation', 'mybooking-used-cars' ),
-		'filter_items_list'     => __( 'Filter Used List', 'mybooking-used-cars' ),
+		'featured_image'        => __( 'Vehicle Catalog Image', 'mybooking-used-cars' ),
+		'set_featured_image'    => __( 'Set vehicle image', 'mybooking-used-cars' ),
+		'remove_featured_image' => __( 'Remove vehicle image', 'mybooking-used-cars' ),
+		'use_featured_image'    => __( 'Use as vehicle image', 'mybooking-used-cars' ),
+		'insert_into_item'      => __( 'Insert into vehicle', 'mybooking-used-cars' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this vehicle', 'mybooking-used-cars' ),
+		'items_list'            => __( 'Vehicle list', 'mybooking-used-cars' ),
+		'items_list_navigation' => __( 'Vehicle list navigation', 'mybooking-used-cars' ),
+		'filter_items_list'     => __( 'Filter Vehicle List', 'mybooking-used-cars' ),
 	);
 	$rewrite = array(
-		'slug'                  => __( 'used-car', 'mybooking-used-cars' ),
+		'slug'                  => __( 'vehicle', 'mybooking-used-cars' ),
 		'with_front'            => true,
 		'pages'                 => true,
 		'feeds'                 => true,
 	);
 	$args = array(
-		'label'                 => __( 'Used cars', 'mybooking-used-cars' ),
-		'description'           => __( 'Mybooking used cars.', 'mybooking-used-cars' ),
+		'label'                 => __( 'Vehicles', 'mybooking-used-cars' ),
+		'description'           => __( 'Mybooking vehicles.', 'mybooking-used-cars' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions' ),
 		'taxonomies'            => array( '' ),
@@ -67,9 +67,9 @@ function mybooking_used_car() {
 	register_post_type( 'used-car', $args );
 
 }
-add_action( 'init', 'mybooking_used_car', 0 );
+add_action( 'init', 'mybooking_create_cpt_used_car', 0 );
 
-// ------ Brands
+// ------ Brands taxonomy management
 
 /**
  * Register brands taxonomy for used cars
@@ -110,9 +110,9 @@ function mybooking_remove_description_field_add($taxonomy) {
             .term-description-wrap {
                 display: none;
             }
-						.term-parent-wrap {
-								display: none;
-						}
+            .term-parent-wrap {
+                    display: none;
+            }
         </style>
 				<script>
 					jQuery(document).ready(function($) {
@@ -159,8 +159,8 @@ function mybooking_remove_description_column($columns) {
 }
 add_filter('manage_edit-brand_columns', 'mybooking_remove_description_column');
 
-// Add models link to brand taxonomy columns
-function mybooking_add_brand_column($columns) {
+// Add a models column to the brand taxonomy
+function mybooking_add_brand_column_models($columns) {
 		if ('POST' !== $_SERVER['REQUEST_METHOD'] && !defined('DOING_AJAX')) {
 			if (!isset($_GET['brand'])) {
 				$columns['models'] = __('Models', 'mybooking-used-cars'); 
@@ -168,14 +168,14 @@ function mybooking_add_brand_column($columns) {
 		}
     return $columns;
 }
-add_filter('manage_edit-brand_columns', 'mybooking_add_brand_column');
+add_filter('manage_edit-brand_columns', 'mybooking_add_brand_column_models');
 
-// Paso 2: Rellenar la columna con un enlace a la lista de modelos de la marca
+// Fill the content to the models column with the models link
 function mybooking_manage_brand_column($content, $column_name, $term_id) {
 		if ('POST' !== $_SERVER['REQUEST_METHOD'] && !defined('DOING_AJAX')) {
 			if (!isset($_GET['brand'])) {
 				if ($column_name == 'models') {
-						// Crear el enlace a la lista de modelos filtrados por la marca actual
+						// Create the link to the list of models
 						$url = admin_url('edit-tags.php?taxonomy=brand&post_type=used-car&brand=' . $term_id);
 						$content = '<a href="' . esc_url($url) . '">' . __('View Models', 'mybooking-used-cars') . '</a>';
 				}
@@ -185,7 +185,40 @@ function mybooking_manage_brand_column($content, $column_name, $term_id) {
 }
 add_filter('manage_brand_custom_column', 'mybooking_manage_brand_column', 10, 3);
 
-// Filter models by brand
+/**
+ * When a new term of the taxonomy 'brand' is created, add a link to the list of models
+ * in the actions. Later, in the UI, we will use AJAX to add the link to the actions.
+ */ 
+function mybooking_used_cars_handle_created_term($term_id, $tt_id, $taxonomy) {
+    // Revisar que sea la taxonomía "brand"
+    if ($taxonomy === 'brand') {
+        $term = get_term($term_id, 'brand');
+
+        // Verificar si es de primer nivel
+        if ($term && $term->parent == 0) {
+            // Crear el enlace a la lista de modelos
+            $url = admin_url('edit-tags.php?taxonomy=brand&post_type=used-car&brand=' . $term_id);
+            $models_link = '<a href="' . esc_url($url) . '">' . __('View Models', 'mybooking-used-cars') . '</a>';
+
+            // Si es una solicitud AJAX, manipula la respuesta
+            if (defined('DOING_AJAX') && DOING_AJAX) {
+                // Añadir el enlace a la respuesta de AJAX
+                add_filter('brand_row_actions', function($actions) use ($models_link, $term_id) {
+                    $actions['models'] = $models_link;
+                    return $actions;
+                }, 10, 2);
+
+              
+            }
+        }
+    }
+}
+add_action('created_term', 'mybooking_used_cars_handle_created_term', 10, 3);
+
+
+
+
+// Filter models by brand (get the terms when showing the brands taxonomy)
 function mybooking_filter_models_by_brand($query) {
     // Comprobar si estamos en el área de administración de términos y si hay un parámetro de marca
     if (is_admin() && isset($_GET['taxonomy']) && $_GET['taxonomy'] === 'brand') {
@@ -201,7 +234,7 @@ function mybooking_filter_models_by_brand($query) {
 				$query->query_vars['hide_empty'] = false;
 				$query->query_vars['hierarchical'] = false;
 
-        // Depuración: Verificar los términos devueltos por la consulta
+        // Transform the returned terms into top-level terms
 				add_filter('get_terms', function($terms, $taxonomies, $args) {
 						foreach ($terms as $term) {
                 $term->parent = 0; // Force 0 so they can be represented as top-level terms
@@ -212,7 +245,7 @@ function mybooking_filter_models_by_brand($query) {
 }
 add_action('pre_get_terms', 'mybooking_filter_models_by_brand');
 
-// Add brand field to model form
+// Add branch field to model form
 function mybooking_add_brand_field_to_model_form($term) {
     if (isset($_GET['brand']) && $_GET['brand']) {
         $brand_id = intval($_GET['brand']);
@@ -260,7 +293,6 @@ function mybooking_display_parent_term_name() {
 add_action('admin_notices', 'mybooking_display_parent_term_name');
 
 
-
 // --------- Templates for CPT
 
 /**
@@ -290,6 +322,9 @@ function mybooking_used_car_archives_template( $archive_used_car_template ){
 }
 add_filter( 'archive_template','mybooking_used_car_archives_template' );
 
+/**
+ * Manage the number of posts per page and the order of the used-car CPT
+*/
 function mybooking_used_car_posts_per_page($query) {
     // Verifica si estamos en el backend (admin) o si la consulta es para el CPT 'used-car'
     if (!is_admin() && $query->is_main_query() && is_post_type_archive('used-car')) {
@@ -298,6 +333,9 @@ function mybooking_used_car_posts_per_page($query) {
 }
 add_action('pre_get_posts', 'mybooking_used_car_posts_per_page');
 
+/**
+ * Change the order of the used-car CPT 
+*/
 function mybooking_used_car_change_order($query) {
     // Asegúrate de que estamos en el archivo de archivo del CPT 'used-car' y que no estamos en el admin
     if (!is_admin() && $query->is_main_query() && is_post_type_archive('used-car')) {
