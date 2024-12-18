@@ -31,7 +31,6 @@
       // Gallery data
       $used_car_gallery_data = get_post_meta( $used_car_data->ID, 'used-car-details-gallery-data', true );
       ?>
-
       <table class="form-table">
         <tbody>
           <tr>
@@ -95,9 +94,9 @@
           </tr>
         </tbody>
       </table>
-
+    
+    <!-- Price -->
     <?php
-      // Price field
       $used_car_details_price = get_post_meta( $used_car_data->ID, 'used-car-details-price', true );
       ?>
       <table class="form-table">
@@ -116,13 +115,13 @@
               class="components-text-control__input">
           </td>
           <td style="width: 45%;">
-            <p class="description"><?php echo esc_html_x( 'Set an ammount for selling or renting this item. Leave empty for no price.', 'used-car-single', 'mybooking-used-cars' ) ?></p>
+            <p class="description"><?php echo esc_html_x( 'Selling price.', 'used-car-single', 'mybooking-used-cars' ) ?></p>
           </td>
         </tr>
       </table>
 
+    <!-- Brand and model -->
     <?php
-      // Brand and model
       $selected_brand = get_post_meta( $used_car_data->ID, 'used-car-details-brand', true );
       $selected_model = get_post_meta( $used_car_data->ID, 'used-car-details-model', true );
 
@@ -197,9 +196,9 @@
             </tr>
         </tbody>
     </table>
-
+    
+    <!-- Year -->
     <?php
-    // Year field
     $used_car_details_year = get_post_meta( $used_car_data->ID, 'used-car-details-year', true );
     ?>
     <table class="form-table">
@@ -217,14 +216,14 @@
             id="used-car-details-year"
             class="components-text-control__input">
             <td style="width: 45%;">
-              <p class="description"><?php echo esc_html_x( 'Enrollement year of the vehicle.', 'used-car-single', 'mybooking-used-cars' ) ?></p>
+              <p class="description"><?php echo esc_html_x( 'Year of the vehicle.', 'used-car-single', 'mybooking-used-cars' ) ?></p>
             </td>
         </td>
       </tr>
     </table>
-
+                            
+    <!-- Kms -->
     <?php
-    // Kms field
     $used_car_details_kms = get_post_meta( $used_car_data->ID, 'used-car-details-kms', true );
     ?>
     <table class="form-table">
@@ -248,185 +247,8 @@
       </tr>
     </table>    
 
+    <!-- Fuel type -->
     <?php
-    // Places field
-    $used_car_details_places = get_post_meta( $used_car_data->ID, 'used-car-details-places', true );
-    ?>
-      <table class="form-table">
-      <tbody>
-        <tr>
-          <th scope="row">
-            <label for="used-car-details-places"><?php echo esc_html_x( 'Places', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-          </th>
-          <td style="width: 45%;">
-            <input
-              type="number"
-              size="10"
-              name="used-car-details-places"
-              value="<?php echo esc_attr( $used_car_details_places ); ?>"
-              id="used-car-details-places"
-              class="components-text-control__input">
-          </td>
-          <td style="width: 45%;">
-            <p class="description"><?php echo esc_html_x( 'Number of sitting places.', 'used-car-single', 'mybooking-used-cars' ) ?></p>
-          </td>
-        </tr>
-      </table>
-    <?php
-
-    // Beds field
-    $used_car_details_beds = get_post_meta( $used_car_data->ID, 'used-car-details-beds', true );
-    ?>
-      <table class="form-table">
-      <tbody>
-        <tr>
-          <th scope="row">
-            <label for="used-car-details-beds"><?php echo esc_html_x( 'Beds', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-          </th>
-          <td style="width: 45%;">
-            <input
-              type="number"
-              size="10"
-              name="used-car-details-beds"
-              value="<?php echo esc_attr( $used_car_details_beds ); ?>"
-              id="used-car-details-beds"
-              class="components-text-control__input">
-          </td>
-          <td style="width: 45%;">
-            <p class="description"><?php echo esc_html_x( 'Number of sleeping places.', 'used-car-single', 'mybooking-used-cars' ) ?></p>
-          </td>
-        </tr>
-      </table>
-    <?php
-
-    // License field
-    $used_car_details_license = get_post_meta( $used_car_data->ID, 'used-car-details-license', true );
-    ?>
-      <table class="form-table">
-      <tbody>
-        <tr>
-          <th scope="row">
-            <label for="used-car-details-license"><?php echo esc_html_x( 'License', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-          </th>
-          <td style="width: 45%;">
-            <input
-              type="text"
-              size="25"
-              name="used-car-details-license"
-              value="<?php echo esc_attr( $used_car_details_license ); ?>"
-              id="used-car-details-license"
-              class="components-text-control__input">
-          </td>
-          <td style="width: 45%;">
-            <p class="description"><?php echo esc_html_x( 'Type of driving license required for this van.', 'used-car-single', 'mybooking-used-cars' ) ?></p>
-          </td>
-        </tr>
-      </table>
-    <?php
-
-    // Lenght field
-    $used_car_details_lenght = get_post_meta( $used_car_data->ID, 'used-car-details-lenght', true );
-    ?>
-      <table class="form-table">
-      <tbody>
-        <tr>
-          <th scope="row">
-            <label for="used-car-details-lenght"><?php echo esc_html_x( 'Lenght', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-          </th>
-          <td style="width: 45%;">
-            <input
-              type="text"
-              size="10"
-              name="used-car-details-lenght"
-              value="<?php echo esc_attr( $used_car_details_lenght ); ?>"
-              id="used-car-details-lenght"
-              class="components-text-control__input"
-              placeholder="Ex: 5,2 mts">
-          </td>
-          <td style="width: 45%;">
-            <p class="description"><?php echo esc_html_x( 'Meassures front to rear in mts.', 'used-car-single', 'mybooking-used-cars' ) ?></p>
-          </td>
-        </tr>
-      </table>
-    <?php
-
-    // Width field
-    $used_car_details_width = get_post_meta( $used_car_data->ID, 'used-car-details-width', true );
-    ?>
-      <table class="form-table">
-      <tbody>
-        <tr>
-          <th scope="row">
-            <label for="used-car-details-width"><?php echo esc_html_x( 'Width', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-          </th>
-          <td style="width: 45%;">
-            <input
-              type="text"
-              size="10"
-              name="used-car-details-width"
-              value="<?php echo esc_attr( $used_car_details_width ); ?>"
-              id="used-car-details-width"
-              class="components-text-control__input">
-          </td>
-          <td style="width: 45%;">
-            <p class="description"><?php echo esc_html_x( 'Meassures side to side in mts.', 'used-car-single', 'mybooking-used-cars' ) ?></p>
-          </td>
-        </tr>
-      </table>
-    <?php
-
-    // Height field
-    $used_car_details_height = get_post_meta( $used_car_data->ID, 'used-car-details-height', true );
-    ?>
-      <table class="form-table">
-      <tbody>
-        <tr>
-          <th scope="row">
-            <label for="used-car-details-height"><?php echo esc_html_x( 'Height', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-          </th>
-          <td style="width: 45%;">
-            <input
-              type="text"
-              size="50"
-              name="used-car-details-height"
-              value="<?php echo esc_attr( $used_car_details_height ); ?>"
-              id="used-car-details-height"
-              class="components-text-control__input">
-          </td>
-          <td style="width: 45%;">
-            <p class="description"><?php echo esc_html_x( 'Meassures floor to top in mts.', 'used-car-single', 'mybooking-used-cars' ) ?></p>
-          </td>
-        </tr>
-      </table>
-
-    <?php
-
-    // Plate field
-    $used_car_details_plate = get_post_meta( $used_car_data->ID, 'used-car-details-plate', true );
-    ?>
-      <table class="form-table">
-      <tbody>
-        <tr>
-          <th scope="row">
-            <label for="used-car-details-plate"><?php echo esc_html_x( 'Plate', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-          </th>
-          <td style="width: 45%;">
-            <input
-              type="text"
-              size="10"
-              name="used-car-details-plate"
-              value="<?php echo esc_attr( $used_car_details_plate ); ?>"
-              id="used-car-details-plate"
-              class="components-text-control__input">
-          </td>
-          <td style="width: 45%;">
-            <p class="description"><?php echo esc_html_x( 'Plate number, digits and letters.', 'used-car-single', 'mybooking-used-cars' ) ?></p>
-          </td>
-        </tr>
-      </table>
-    <?php
-
-    // Fuel type field
     $used_car_details_fuel = get_post_meta( $used_car_data->ID, 'used-car-details-fuel', true );
     ?>
       <table class="form-table">
@@ -436,334 +258,97 @@
             <label for="used-car-details-fuel"><?php echo esc_html_x( 'Fuel type', 'used-car-single', 'mybooking-used-cars' ) ?></label>
           </th>
           <td style="width: 45%;">
-            <input
-              type="text"
-              size="10"
-              name="used-car-details-fuel"
-              value="<?php echo esc_attr( $used_car_details_fuel ); ?>"
-              id="used-car-details-fuel"
-              class="components-text-control__input">
+
+            <select
+                name="used-car-details-fuel"
+                id="used-car-details-fuel"
+                class="components-select-control__input"
+                style="width: 100%">
+                <option value=""><?php esc_html_e( 'Select fuel', 'mybooking-used-cars' ); ?></option>
+                <option value="petrol"
+                        <?php selected( $used_car_details_fuel, 'manual' ); ?>>
+                        <?php echo esc_html_x( 'Petrol', 'used-car-single', 'mybooking-used-cars' ); ?>
+                </option>
+                <option value="diesel"
+                        <?php selected( $used_car_details_fuel, 'automatic' ); ?>>
+                        <?php echo esc_html_x( 'Diesel', 'used-car-single', 'mybooking-used-cars' ); ?>
+                </option>
+                <option value="electric"
+                        <?php selected( $used_car_details_fuel, 'electric' ); ?>>
+                        <?php echo esc_html_x( 'Electric', 'used-car-single', 'mybooking-used-cars' ); ?>
+                </option>
+                <option value="hybrid"
+                        <?php selected( $used_car_details_fuel, 'hybrid' ); ?>>
+                        <?php echo esc_html_x( 'Hybrid', 'used-car-single', 'mybooking-used-cars' ); ?>
+                </option>                                   
+            </select>
           </td>
           <td style="width: 45%;">
             <p class="description"><?php echo esc_html_x( 'Could be Diesel / Benzine or Electric.', 'used-car-single', 'mybooking-used-cars' ) ?></p>
           </td>
         </tr>
       </table>
+    
+    <!-- Engine --> 
     <?php
-
-    // Engine field
     $used_car_details_engine = get_post_meta( $used_car_data->ID, 'used-car-details-engine', true );
     ?>
       <table class="form-table">
-      <tbody>
-        <tr>
-          <th scope="row">
-            <label for="used-car-details-engine"><?php echo esc_html_x( 'Engine', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-          </th>
-          <td style="width: 45%;">
-            <input
-              type="text"
-              size="50"
-              name="used-car-details-engine"
-              value="<?php echo esc_attr( $used_car_details_engine ); ?>"
-              id="used-car-details-engine"
-              class="components-text-control__input">
-          </td>
-          <td style="width: 45%;"></td>
-        </tr>
+        <tbody>
+          <tr>
+            <th scope="row">
+              <label for="used-car-details-engine"><?php echo esc_html_x( 'Engine', 'used-car-single', 'mybooking-used-cars' ) ?></label>
+            </th>
+            <td style="width: 45%;">
+              <input
+                type="number"
+                name="used-car-details-engine"
+                value="<?php echo esc_attr( $used_car_details_engine ); ?>"
+                id="used-car-details-engine"
+                class="components-text-control__input">
+            </td>
+            <td style="width: 45%;">
+              <p class="description"><?php echo esc_html_x( 'CV', 'used-car-single', 'mybooking-used-cars' ) ?></p>
+            </td>
+          </tr>
+        </tbody>
       </table>
+    
+    <!-- Gear -->  
     <?php
-
-    // Gear field
     $used_car_details_gear = get_post_meta( $used_car_data->ID, 'used-car-details-gear', true );
     ?>
       <table class="form-table">
       <tbody>
         <tr>
           <th scope="row">
-            <label for="used-car-details-gear"><?php echo esc_html_x( 'Gear', 'used-car-single', 'mybooking-used-cars' ) ?></label>
+            <label for="used-car-details-gear"><?php echo esc_html_x( 'Transmission', 'used-car-single', 'mybooking-used-cars' ) ?></label>
           </th>
           <td style="width: 45%;">
-            <input
-              type="text"
-              size="50"
-              name="used-car-details-gear"
-              value="<?php echo esc_attr( $used_car_details_gear ); ?>"
-              id="used-car-details-gear"
-              class="components-text-control__input">
+            <select
+                name="used-car-details-gear"
+                id="used-car-details-gear"
+                class="components-select-control__input"
+                style="width: 100%">
+                <option value=""><?php esc_html_e( 'Select a gear', 'mybooking-used-cars' ); ?></option>
+                <option value="manual"
+                        <?php selected( $used_car_details_gear, 'manual' ); ?>>
+                        <?php echo esc_html_x( 'Manual', 'used-car-single', 'mybooking-used-cars' ); ?>
+                </option>
+                <option value="automatic"
+                        <?php selected( $used_car_details_gear, 'automatic' ); ?>>
+                        <?php echo esc_html_x( 'Automatic', 'used-car-single', 'mybooking-used-cars' ); ?>
+                </option>                
+            </select>
           </td>
-          <td style="width: 45%;"></td>
-        </tr>
-      </table>
-    <?php
-
-    // Power field
-    $used_car_details_power = get_post_meta( $used_car_data->ID, 'used-car-details-power', true );
-    ?>
-      <table class="form-table">
-      <tbody>
-        <tr>
-          <th scope="row">
-            <label for="used-car-details-power"><?php echo esc_html_x( 'Power supply', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-          </th>
           <td style="width: 45%;">
-            <input
-              type="text"
-              size="50"
-              name="used-car-details-power"
-              value="<?php echo esc_attr( $used_car_details_power ); ?>"
-              id="used-car-details-power"
-              class="components-text-control__input">
+          <p class="description"><?php echo esc_html_x( 'Manual or automatic', 'used-car-single', 'mybooking-used-cars' ) ?></p>
           </td>
-          <td style="width: 45%;"></td>
         </tr>
       </table>
 
-      <?php
-
-
-
-      ?>
     <?php
 
-    // Solar panels field
-    $used_car_details_solar_panels = get_post_meta( $used_car_data->ID, 'used-car-details-solar-panels', true );
-    if( $used_car_details_solar_panels == "yes") {
-      $used_car_details_solar_panels_checked = 'checked="checked"';
-    } else {
-      $used_car_details_solar_panels_checked = '';
-    }
-
-    // Extras
-    $used_car_details_pets = get_post_meta( $used_car_data->ID, 'used-car-details-pets', true );
-    if( $used_car_details_pets == "yes") {
-      $used_car_details_pets_checked = 'checked="checked"';
-    } else {
-      $used_car_details_pets_checked = '';
-    }
-
-    $used_car_details_conditioned = get_post_meta( $used_car_data->ID, 'used-car-details-conditioned', true );
-    if( $used_car_details_conditioned == "yes") {
-      $used_car_details_conditioned_checked = 'checked="checked"';
-    } else {
-      $used_car_details_conditioned_checked = '';
-    }
-
-    $used_car_details_shower = get_post_meta( $used_car_data->ID, 'used-car-details-shower', true );
-    if( $used_car_details_shower == true ) {
-      $used_car_details_shower_checked = 'checked="checked"';
-    }
-    else {
-      $used_car_details_shower_checked = '';
-    }
-
-    $used_car_details_hob = get_post_meta( $used_car_data->ID, 'used-car-details-hob', true );
-    if( $used_car_details_hob == "yes") {
-      $used_car_details_hob_checked = 'checked="checked"';
-    } else {
-      $used_car_details_hob_checked = '';
-    }
-
-    $used_car_details_sink = get_post_meta( $used_car_data->ID, 'used-car-details-sink', true );
-    if( $used_car_details_sink == "yes") {
-      $used_car_details_sink_checked = 'checked="checked"';
-    } else {
-      $used_car_details_sink_checked = '';
-    }
-
-    $used_car_details_toilet = get_post_meta( $used_car_data->ID, 'used-car-details-toilet', true );
-    if( $used_car_details_toilet == "yes") {
-      $used_car_details_toilet_checked = 'checked="checked"';
-    } else {
-      $used_car_details_toilet_checked = '';
-    }
-
-    $used_car_details_tv = get_post_meta( $used_car_data->ID, 'used-car-details-tv', true );
-    if( $used_car_details_tv == "yes") {
-      $used_car_details_tv_checked = 'checked="checked"';
-    } else {
-      $used_car_details_tv_checked = '';
-    }
-
-    $used_car_details_isofix = get_post_meta( $used_car_data->ID, 'used-car-details-isofix', true );
-    if( $used_car_details_isofix == "yes") {
-      $used_car_details_isofix_checked = 'checked="checked"';
-    } else {
-      $used_car_details_isofix_checked = '';
-    }
-
-    $used_car_details_awning = get_post_meta( $used_car_data->ID, 'used-car-details-awning', true );
-    if( $used_car_details_awning == "yes") {
-      $used_car_details_awning_checked = 'checked="checked"';
-    } else {
-      $used_car_details_awning_checked = '';
-    }
-
-    $used_car_details_rear_camera = get_post_meta( $used_car_data->ID, 'used-car-details-rear-camera', true );
-    if( $used_car_details_rear_camera == "yes") {
-      $used_car_details_rear_camera_checked = 'checked="checked"';
-    } else {
-      $used_car_details_rear_camera_checked = '';
-    }
-
-    ?>
-      <table class="form-table">
-      <tbody>
-        <tr>
-          <th scope="row">
-            <label>Extras</label>
-          </th>
-          <td style="width: 90%;">
-            <label style="margin-right: 20px;" for="used-car-details-solar-panels">
-            <input
-              type="checkbox"
-              name="used-car-details-solar-panels"
-              value="yes" <?php echo $used_car_details_solar_panels_checked; ?>
-              id="used-car-details-solar-panels"
-              class="components-text-control__input">
-            <?php echo esc_html_x( 'Solar panels', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-            <label style="margin-right: 20px;" for="used-car-details-pets">
-            <input
-              type="checkbox"
-              name="used-car-details-pets"
-              value="yes" <?php echo $used_car_details_pets_checked; ?>
-              id="used-car-details-pets"
-              class="components-text-control__input">
-              <?php echo esc_html_x( 'Pets allowed', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-            <label style="margin-right: 20px;" for="used-car-details-pets">
-            <input
-              type="checkbox"
-              name="used-car-details-conditioned"
-              value="yes" <?php echo $used_car_details_conditioned_checked; ?>
-              id="used-car-details-conditioned"
-              class="components-text-control__input">
-              <?php echo esc_html_x( 'Air conditioning', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-
-            <label style="margin-right: 20px;" for="used-car-details-shower">
-            <input
-              type="checkbox"
-              name="used-car-details-shower"
-              value="Shower" <?php echo $used_car_details_shower_checked; ?>
-              id="used-car-details-shower"
-              class="components-text-control__input">
-              <?php echo esc_html_x( 'Shower', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-
-            <label style="margin-right: 20px;" for="used-car-details-hob">
-            <input
-              type="checkbox"
-              name="used-car-details-hob"
-              value="Hob" <?php echo $used_car_details_hob_checked; ?>
-              id="used-car-details-hob"
-              class="components-text-control__input">
-              <?php echo esc_html_x( 'Hob', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-
-            <label style="margin-right: 20px;" for="used-car-details-sink">
-            <input
-              type="checkbox"
-              name="used-car-details-sink"
-              value="Sink" <?php echo $used_car_details_sink_checked; ?>
-              id="used-car-details-sink"
-              class="components-text-control__input">
-              <?php echo esc_html_x( 'Sink', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-
-            <label style="margin-right: 20px;" for="used-car-details-toilet">
-            <input
-              type="checkbox"
-              name="used-car-details-toilet"
-              value="Toilet" <?php echo $used_car_details_toilet_checked; ?>
-              id="used-car-details-toilet"
-              class="components-text-control__input">
-              <?php echo esc_html_x( 'Toilet', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-
-            <label style="margin-right: 20px;" for="used-car-details-tv">
-            <input
-              type="checkbox"
-              name="used-car-details-tv"
-              value="TV" <?php echo $used_car_details_tv_checked; ?>
-              id="used-car-details-tv"
-              class="components-text-control__input">
-              <?php echo esc_html_x( 'TV', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-
-            <label style="margin-right: 20px;" for="used-car-details-isofix">
-            <input
-              type="checkbox"
-              name="used-car-details-isofix"
-              value="yes" <?php echo $used_car_details_isofix_checked; ?>
-              id="used-car-details-isofix"
-              class="components-text-control__input">
-              <?php echo esc_html_x( 'ISOFIX', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-
-            <label style="margin-right: 20px;" for="used-car-details-awning">
-            <input
-              type="checkbox"
-              name="used-car-details-awning"
-              value="yes" <?php echo $used_car_details_awning_checked; ?>
-              id="used-car-details-awning"
-              class="components-text-control__input">
-              <?php echo esc_html_x( 'Awning', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-
-            <label style="margin-right: 20px;" for="used-car-details-rear-camera">
-            <input
-              type="checkbox"
-              name="used-car-details-rear-camera"
-              value="yes" <?php echo $used_car_details_rear_camera_checked; ?>
-              id="used-car-details-rear-camera"
-              class="components-text-control__input">
-              <?php echo esc_html_x( 'Rear Camera', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-          </td>
-        </tr>
-      </table>
-    <?php
-
-    // ID field
-    $used_car_details_id = get_post_meta( $used_car_data->ID, 'used-car-details-id', true );
-    ?>
-      <table class="form-table">
-      <tbody>
-        <tr>
-          <th scope="row">
-            <label for="used-car-details-id"><?php echo esc_html_x( 'Camper ID', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-          </th>
-          <td style="width: 45%;">
-            <input
-              type="text"
-              size="25"
-              name="used-car-details-id"
-              value="<?php echo esc_attr( $used_car_details_id ); ?>"
-              id="used-car-details-id"
-              class="components-text-control__input">
-          </td>
-          <td style="width: 45%;">
-            <p class="description"><?php echo _x( 'Paste here the ID of this camper if you want to show the booking calendar. Requires an active <a href="https://mybooking.es/registro/" title="Register your account" target="_blank">Mybooking account</a> and a properly set inventory.', 'used-car-single', 'mybooking-used-cars' ) ?></p>
-          </td>
-        </tr>
-      </table>
-    <?php
-
-    // Video URL
-    $used_car_details_video_url = get_post_meta( $used_car_data->ID, 'used-car-details-video', true );
-    ?>
-      <table class="form-table">
-      <tbody>
-        <tr>
-          <th scope="row">
-            <label for="used-car-details-video"><?php echo esc_html_x( 'Youtube link', 'used-car-single', 'mybooking-used-cars' ) ?></label>
-          </th>
-          <td style="width: 45%;">
-            <input
-              type="text"
-              size="25"
-              name="used-car-details-video"
-              value="<?php echo esc_attr( $used_car_details_video_url ); ?>"
-              id="used-car-details-video"
-              class="components-text-control__input">
-          </td>
-          <td style="width: 45%;">
-            <p class="description"><?php echo _x( 'You can show any video on YouTube', 'used-car-single', 'mybooking-used-cars' ) ?></p>
-          </td>
-        </tr>
-      </table>
-    <?php
   }
 
 
@@ -844,94 +429,6 @@
       );
     }
 
-    // Solar panels
-    if (  isset( $_POST[ 'used-car-details-solar-panels' ] )  ) {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-solar-panels',
-        'yes'
-      );
-    }
-    else {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-solar-panels',
-        ''
-      );
-    }
-
-
-
-    // Places
-    if (  array_key_exists( 'used-car-details-places', $_POST )  ) {
-      $used_car_places = sanitize_text_field( $_POST['used-car-details-places'] );
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-places',
-        $used_car_places
-      );
-    }
-
-    // Beds
-    if (  array_key_exists( 'used-car-details-license', $_POST )  ) {
-      $used_car_license = sanitize_text_field( $_POST['used-car-details-license'] );
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-license',
-        $used_car_license
-      );
-    }
-
-    // Beds
-    if (  array_key_exists( 'used-car-details-beds', $_POST )  ) {
-      $used_car_beds = sanitize_text_field( $_POST['used-car-details-beds'] );
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-beds',
-        $used_car_beds
-      );
-    }
-
-    // Lenght
-    if (  array_key_exists( 'used-car-details-lenght', $_POST )  ) {
-      $used_car_lenght = sanitize_text_field( $_POST['used-car-details-lenght'] );
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-lenght',
-        $used_car_lenght
-      );
-    }
-
-    // Width
-    if (  array_key_exists( 'used-car-details-width', $_POST )  ) {
-      $used_car_width = sanitize_text_field( $_POST['used-car-details-width'] );
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-width',
-        $used_car_width
-      );
-    }
-
-    // Height
-    if (  array_key_exists( 'used-car-details-height', $_POST )  ) {
-      $used_car_height = sanitize_text_field( $_POST['used-car-details-height'] );
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-height',
-        $used_car_height
-      );
-    }
-
-    // Plate
-    if (  array_key_exists( 'used-car-details-plate', $_POST )  ) {
-      $used_car_plate = sanitize_text_field( $_POST['used-car-details-plate'] );
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-plate',
-        $used_car_plate
-      );
-    }
-
     // Fuel
     if (  array_key_exists( 'used-car-details-fuel', $_POST )  ) {
       $used_car_fuel = sanitize_text_field( $_POST['used-car-details-fuel'] );
@@ -959,198 +456,6 @@
         $used_car_data_id,
         'used-car-details-gear',
         $used_car_gear
-      );
-    }
-
-    // Power
-    if (  array_key_exists( 'used-car-details-power', $_POST )  ) {
-      $used_car_power = sanitize_text_field( $_POST['used-car-details-power'] );
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-power',
-        $used_car_power
-      );
-    }
-
-    // -- Extras
-
-    // Pets
-    if (  isset( $_POST[ 'used-car-details-pets' ] )  ) {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-pets',
-        'yes'
-      );
-    }
-    else {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-pets',
-        ''
-      );
-    }
-
-    // Air Conditioning
-    if (  isset( $_POST[ 'used-car-details-conditioned' ] )  ) {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-conditioned',
-        'yes'
-      );
-    }
-    else {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-conditioned',
-        ''
-      );
-    }
-
-    // Shower
-    if (  isset( $_POST[ 'used-car-details-shower' ] )  ) {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-shower',
-        'yes'
-      );
-    }
-    else {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-shower',
-        ''
-      );
-    }
-
-    // Hob
-    if (  isset( $_POST[ 'used-car-details-hob' ] )  ) {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-hob',
-        'yes'
-      );
-    }
-    else {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-hob',
-        ''
-      );
-    }
-
-    // Sink
-    if (  isset( $_POST[ 'used-car-details-sink' ] )  ) {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-sink',
-        'yes'
-      );
-    }
-    else {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-sink',
-        ''
-      );
-    }
-
-    // Toilet
-    if (  isset( $_POST[ 'used-car-details-toilet' ] )  ) {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-toilet',
-        'yes'
-      );
-    }
-    else {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-toilet',
-        ''
-      );
-    }
-
-    // TV
-    if (  isset( $_POST[ 'used-car-details-tv' ] )  ) {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-tv',
-        'yes'
-      );
-    }
-    else {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-tv',
-        ''
-      );
-    }
-
-    // ISOFIX
-    if (  isset( $_POST[ 'used-car-details-isofix' ] )  ) {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-isofix',
-        'yes'
-      );
-    }
-    else {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-isofix',
-        ''
-      );
-    }
-
-    // Anwing
-    if (  isset( $_POST[ 'used-car-details-awning' ] )  ) {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-awning',
-        'yes'
-      );
-    }
-    else {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-awning',
-        ''
-      );
-    }
-
-    // Rear camera
-    if (  isset( $_POST[ 'used-car-details-rear-camera' ] )  ) {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-rear-camera',
-        'yes'
-      );
-    }
-    else {
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-rear-camera',
-        ''
-      );
-    }
-
-    // Camper ID
-    if (  array_key_exists( 'used-car-details-id', $_POST )  ) {
-      $used_car_id = sanitize_text_field( $_POST['used-car-details-id'] );
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-id',
-        $used_car_id
-      );
-    }
-
-    // Video URL
-    if (  array_key_exists( 'used-car-details-video', $_POST )  ) {
-      $used_car_video = sanitize_text_field( $_POST['used-car-details-video'] );
-      update_post_meta(
-        $used_car_data_id,
-        'used-car-details-video',
-        $used_car_video
       );
     }
 

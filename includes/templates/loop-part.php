@@ -26,13 +26,9 @@ defined( 'ABSPATH' ) || exit;
 	$used_car_details_price = get_post_meta( $post->ID, 'used-car-details-price', true );
   $used_car_details_year = get_post_meta( $post->ID, 'used-car-details-year', true );
   $used_car_details_kms = get_post_meta( $post->ID, 'used-car-details-kms', true );
-	$used_car_details_places = get_post_meta( $post->ID, 'used-car-details-places', true );
-	$used_car_details_beds = get_post_meta( $post->ID, 'used-car-details-beds', true );
-	$used_car_details_license = get_post_meta( $post->ID, 'used-car-details-license', true );
-	$used_car_details_shower = get_post_meta( $post->ID, 'used-car-details-shower', true );
-	$used_car_details_pets = get_post_meta( $post->ID, 'used-car-details-pets', true );
-	$used_car_details_toilet = get_post_meta( $post->ID, 'used-car-details-toilet', true );
-	$used_car_details_solar_panels = get_post_meta( $post->ID, 'used-car-details-solar-panels', true );
+  $used_car_details_engine = get_post_meta( $post->ID, 'used-car-details-engine', true );
+  $used_car_details_gear = get_post_meta( $post->ID, 'used-car-details-gear', true );
+  $used_car_details_fuel = get_post_meta( $post->ID, 'used-car-details-fuel', true );
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -48,20 +44,6 @@ defined( 'ABSPATH' ) || exit;
     </div>
 
     <div class="mybooking-used-cars_card-body">
-
-      <!-- Categories -->
-
-      <?php if ( get_post_type( get_the_ID() ) == 'camper' ) { ?>
-        <?php $used_car_taxonomy = get_the_terms( get_the_ID(), 'campers' ); ?>
-        <?php if ( isset( $used_car_taxonomy ) && !empty( $used_car_taxonomy ) ) { ?>
-          <div class="mybooking-used-cars_card-category">
-            <?php foreach ( $used_car_taxonomy as $used_car_tax ) { ?>
-              <span class="mybooking-used-cars_card-category-item"><?php echo esc_html( $used_car_tax->name ); ?></span>
-            <?php } ?>
-          </div>
-        <?php } ?>
-      <?php }?>
-
 
       <?php if ( $used_car_details_brand !='' || $used_car_details_model !='' ) {  ?>
         <div class="mybooking-used-cars_card-title">
@@ -87,50 +69,43 @@ defined( 'ABSPATH' ) || exit;
             <?php echo esc_html( number_format($used_car_details_kms, 0, ',', '.') ) ?> km
           </span>
         <?php } ?>
-      </div>
-
-      <div class="mybooking-used-cars_details">
-        <?php if ( $used_car_details_places !='' ) {  ?>
-          <span class="mybooking-used-cars_characteristic">
-            <img class="mybooking-used-cars_characteristic-icon" src="<?php echo plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/places.svg'; ?>">
-            <?php echo esc_html( $used_car_details_places ) ?>
+        <?php if ( $used_car_details_engine !='' ) {  ?>
+          <span class="badge badge-light">
+            <?php echo esc_html( $used_car_details_engine ) ?> CV
+          </span>
+        <?php } ?>
+        <?php if ( $used_car_details_gear !='' ) {  ?>
+          <span class="badge badge-light">
+            <?php if ( $used_car_details_gear == 'manual' ) { ?>
+              <?php echo esc_html_x('Manual', 'used-car-archive', 'mybooking-used-cars') ?>
+            <?php } else { ?>
+              <?php echo esc_html_x('Automatic', 'used-car-archive', 'mybooking-used-cars') ?>
+            <?php } ?>
+          </span>
+        <?php } ?>
+        <?php if ( $used_car_details_fuel !='' ) {  ?>
+          <span class="badge badge-light">
+            <?php 
+            switch ($used_car_details_fuel) {
+              case 'petrol':
+                echo esc_html_x('Petrol', 'used-car-archive', 'mybooking-used-cars');
+                break;
+              case 'diesel':
+                echo esc_html_x('Diesel', 'used-car-archive', 'mybooking-used-cars');
+                break;
+              case 'electric':
+                echo esc_html_x('Electric', 'used-car-archive', 'mybooking-used-cars');
+                break;
+              case 'hybrid':
+                echo esc_html_x('Hybrid', 'used-car-archive', 'mybooking-used-cars');
+                break;
+              default:
+                echo esc_html($used_car_details_fuel);
+            }
+            ?>
           </span>
         <?php } ?>
 
-        <?php if ( $used_car_details_beds !='' ) {  ?>
-          <span class="mybooking-used-cars_characteristic">
-            <img class="mybooking-used-cars_characteristic-icon" src="<?php echo plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/beds.svg'; ?>">
-            <?php echo esc_html( $used_car_details_beds ) ?>
-          </span>
-        <?php } ?>
-
-        <?php if ( $used_car_details_shower == 'yes' ) {  ?>
-          <span class="mybooking-used-cars_characteristic">
-            <img class="mybooking-used-cars_characteristic-icon" src="<?php echo plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/shower.svg'; ?>">
-            <?php echo esc_html_x( 'Interior', 'used-car-single', 'mybooking-used-cars' ) ?>
-          </span>
-        <?php } ?>
-
-        <?php if ( $used_car_details_license !='' ) {  ?>
-          <span class="mybooking-used-cars_characteristic">
-            <img class="mybooking-used-cars_characteristic-icon" src="<?php echo plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/driving_license.svg'; ?>">
-            <?php echo esc_html( $used_car_details_license ) ?>
-          </span>
-        <?php } ?>
-
-        <?php if ( $used_car_details_pets == 'yes' ) {  ?>
-          <span class="mybooking-used-cars_characteristic">
-            <img class="mybooking-used-cars_characteristic-icon" src="<?php echo plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/pets.svg'; ?>">
-            <?php echo esc_html_x( 'Yes', 'used-car-single', 'mybooking-used-cars' ) ?>
-          </span>
-        <?php } ?>
-
-        <?php if ( $used_car_details_solar_panels == 'yes' ) {  ?>
-          <span class="mybooking-used-cars_characteristic">
-            <img class="mybooking-used-cars_characteristic-icon" src="<?php echo plugin_dir_url( dirname( __FILE__ ) ) . 'assets/icons/solar-panels.svg'; ?>">
-            <?php echo esc_html_x( 'Yes', 'used-car-single', 'mybooking-used-cars' ) ?>
-          </span>
-        <?php } ?>
       </div>
 
       <!-- Read more -->
