@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mybooking Used Cars\n"
 "POT-Creation-Date: 2024-12-19 00:16+0100\n"
-"PO-Revision-Date: 2024-12-19 00:20+0100\n"
+"PO-Revision-Date: 2024-12-19 00:32+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -42,14 +42,13 @@ msgid " ( Page %s )"
 msgstr " (Página %s)"
 
 #: includes/templates/archives-used-car.php:42
-#, fuzzy
 msgctxt "blog_message"
 msgid ""
 "No content found. Please publish at least one camper to show something at "
 "here"
 msgstr ""
 "No se ha encontrado ningún contenido. Por favor, publique al menos un "
-"campista para mostrar algo aquí"
+"vehículo para mostrar algo aquí"
 
 #: includes/templates/loop-part.php:66
 msgctxt "used-car-archive"
@@ -97,7 +96,6 @@ msgid "Hybrid"
 msgstr "Híbrido"
 
 #: includes/used-car-metaboxes.php:16
-#, fuzzy
 msgctxt "used-car-metabox"
 msgid "Used car Details"
 msgstr "Detalles del coche usado"
@@ -108,7 +106,6 @@ msgid "Image gallery"
 msgstr "Galería de imágenes"
 
 #: includes/used-car-metaboxes.php:92
-#, fuzzy
 msgctxt "used-car-single"
 msgid ""
 "Add multiple images from your media library to create a carousel. Click and "
@@ -118,13 +115,11 @@ msgstr ""
 "Haga clic y arrastre para cambiar el orden."
 
 #: includes/used-car-metaboxes.php:106
-#, fuzzy
 msgctxt "used-car-single"
 msgid "Selling price"
 msgstr "Precio de venta"
 
 #: includes/used-car-metaboxes.php:118
-#, fuzzy
 msgctxt "used-car-single"
 msgid "Selling price."
 msgstr "Precio de venta."
@@ -138,7 +133,6 @@ msgid "Select a brand"
 msgstr "Seleccionar una marca"
 
 #: includes/used-car-metaboxes.php:167
-#, fuzzy
 msgctxt "used-car-single"
 msgid "The vehicle mark."
 msgstr "La marca del vehículo."
@@ -148,12 +142,10 @@ msgid "Model"
 msgstr "Modelo"
 
 #: includes/used-car-metaboxes.php:182
-#, fuzzy
 msgid "Select a model"
 msgstr "Seleccione un modelo"
 
 #: includes/used-car-metaboxes.php:194
-#, fuzzy
 msgctxt "used-car-single"
 msgid "The vehicle model."
 msgstr "El modelo del vehículo."
@@ -164,19 +156,16 @@ msgid "Year"
 msgstr "Año"
 
 #: includes/used-car-metaboxes.php:219
-#, fuzzy
 msgctxt "used-car-single"
 msgid "Year of the vehicle."
 msgstr "Año del vehículo."
 
 #: includes/used-car-metaboxes.php:233
-#, fuzzy
 msgctxt "used-car-single"
 msgid "Kms"
 msgstr "Kms"
 
 #: includes/used-car-metaboxes.php:244
-#, fuzzy
 msgctxt "used-car-single"
 msgid "Kms of the vehicle."
 msgstr "Kms del vehículo."
@@ -187,7 +176,6 @@ msgid "Fuel type"
 msgstr "Tipo de combustible"
 
 #: includes/used-car-metaboxes.php:267
-#, fuzzy
 msgid "Select fuel"
 msgstr "Seleccionar combustible"
 
@@ -212,10 +200,9 @@ msgid "Hybrid"
 msgstr "Híbrido"
 
 #: includes/used-car-metaboxes.php:287
-#, fuzzy
 msgctxt "used-car-single"
 msgid "Could be Diesel / Benzine or Electric."
-msgstr "Puede ser Diesel / Bencina o Eléctrico."
+msgstr "Puede ser Diesel, gasolina, híbrido o eléctrico."
 
 #: includes/used-car-metaboxes.php:300
 msgctxt "used-car-single"
@@ -233,7 +220,6 @@ msgid "Transmission"
 msgstr "Transmisión"
 
 #: includes/used-car-metaboxes.php:333
-#, fuzzy
 msgid "Select a gear"
 msgstr "Selecciona una marcha"
 
@@ -248,7 +234,6 @@ msgid "Automatic"
 msgstr "Automático"
 
 #: includes/used-car-metaboxes.php:345
-#, fuzzy
 msgctxt "used-car-single"
 msgid "Manual or automatic"
 msgstr "Manual o automático"
@@ -269,7 +254,6 @@ msgid "Vehicles"
 msgstr "Vehículos"
 
 #: includes/used-car-post-type.php:15
-#, fuzzy
 msgid "Vehicle Archives"
 msgstr "Archivos de vehículos"
 
@@ -278,7 +262,6 @@ msgid "Vehicle Attributes"
 msgstr "Atributos del vehículo"
 
 #: includes/used-car-post-type.php:17
-#, fuzzy
 msgid "Parent vehicle:"
 msgstr "Vehículo principal:"
 
@@ -287,7 +270,6 @@ msgid "All vehicles"
 msgstr "Todos los vehículos"
 
 #: includes/used-car-post-type.php:19
-#, fuzzy
 msgid "Add New vehicle"
 msgstr "Agregar nuevo vehículo"
 
@@ -296,27 +278,22 @@ msgid "Add New"
 msgstr "Añadir nuevo"
 
 #: includes/used-car-post-type.php:21
-#, fuzzy
 msgid "New vehicle"
 msgstr "Vehículo nuevo"
 
 #: includes/used-car-post-type.php:22
-#, fuzzy
 msgid "Edit vehicle"
 msgstr "Editar vehículo"
 
 #: includes/used-car-post-type.php:23
-#, fuzzy
 msgid "Update vehicle"
 msgstr "Actualizar vehículo"
 
 #: includes/used-car-post-type.php:24 includes/used-car-post-type.php:25
-#, fuzzy
 msgid "View vehicle"
 msgstr "Ver vehículo"
 
 #: includes/used-car-post-type.php:26
-#, fuzzy
 msgid "Search vehicle"
 msgstr "Vehículo de búsqueda"
 
@@ -329,47 +306,38 @@ msgid "Not found in Trash"
 msgstr "No encontrado en la papelera"
 
 #: includes/used-car-post-type.php:29
-#, fuzzy
 msgid "Vehicle Catalog Image"
 msgstr "Imagen del catálogo de vehículos"
 
 #: includes/used-car-post-type.php:30
-#, fuzzy
 msgid "Set vehicle image"
 msgstr "Establecer la imagen del vehículo"
 
 #: includes/used-car-post-type.php:31
-#, fuzzy
 msgid "Remove vehicle image"
 msgstr "Eliminar la imagen del vehículo"
 
 #: includes/used-car-post-type.php:32
-#, fuzzy
 msgid "Use as vehicle image"
 msgstr "Uso como imagen de vehículo"
 
 #: includes/used-car-post-type.php:33
-#, fuzzy
 msgid "Insert into vehicle"
 msgstr "Insertar en el vehículo"
 
 #: includes/used-car-post-type.php:34
-#, fuzzy
 msgid "Uploaded to this vehicle"
 msgstr "Subido a este vehículo"
 
 #: includes/used-car-post-type.php:35
-#, fuzzy
 msgid "Vehicle list"
 msgstr "Lista de vehículos"
 
 #: includes/used-car-post-type.php:36
-#, fuzzy
 msgid "Vehicle list navigation"
 msgstr "Navegación por la lista de vehículos"
 
 #: includes/used-car-post-type.php:37
-#, fuzzy
 msgid "Filter Vehicle List"
 msgstr "Filtrar lista de vehículos"
 
@@ -378,12 +346,10 @@ msgid "vehicle"
 msgstr "vehiculo"
 
 #: includes/used-car-post-type.php:47
-#, fuzzy
 msgid "Mybooking vehicles."
 msgstr "Vehículos Mybooking."
 
 #: includes/used-car-post-type.php:85
-#, fuzzy
 msgid "Brands and models"
 msgstr "Marcas y modelos"
 
@@ -404,7 +370,6 @@ msgid "Update brand"
 msgstr "Actualizar bodega"
 
 #: includes/used-car-post-type.php:91
-#, fuzzy
 msgid "Add brand"
 msgstr "Añade marca"
 
@@ -417,7 +382,6 @@ msgid "Models"
 msgstr "Modelos"
 
 #: includes/used-car-post-type.php:180 includes/used-car-post-type.php:201
-#, fuzzy
 msgid "View Models"
 msgstr "Ver modelos"
 

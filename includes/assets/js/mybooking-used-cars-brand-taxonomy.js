@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
     $(document).ajaxSuccess(function (event, xhr, settings) {
-        // Create the column to link to the models of the new added brand because
-        // this column is not created when the new brand is created by Ajax
+        // Crear la columna para vincular a los modelos de la nueva marca añadida porque
+        // esta columna no se crea cuando se añade la nueva marca por Ajax
         if (settings.data && settings.data.indexOf('action=add-tag') !== -1) {
             // Obtener la respuesta XML
             var responseXML = xhr.responseXML;
@@ -24,19 +24,17 @@ jQuery(document).ready(function ($) {
                         // Buscar la fila que corresponde al término insertado
                         var $termRow = $('#the-list tr#tag-' + termId);
 
-                        // Buscar si ya existe la columna "models"
-                        var $modelsColumn = $termRow.find('.column-models');
+                        // Buscar la columna de "slug"
+                        var $slugColumn = $termRow.find('.column-slug');
 
-                        // Si la columna "models" existe, añadir el enlace
-                        if ($modelsColumn.length) {
-                            $modelsColumn.html('<a href="' + modelsUrl + '">View Models</a>');
-                        } else {
-                            // Si la columna no existe, añadir una nueva columna "models"
+                        // Si la columna "slug" existe, insertar la nueva columna a la derecha de ella
+                        if ($slugColumn.length) {
+                            // Crear la nueva columna "models"
                             var $newColumn = $('<td class="models column-models" data-colname="Models"></td>');
                             $newColumn.html('<a href="' + modelsUrl + '">View Models</a>');
 
-                            // Insertar la nueva columna al final de la fila
-                            $termRow.append($newColumn);
+                            // Insertar la nueva columna después de la columna "slug"
+                            $slugColumn.after($newColumn);
                         }
                     }
                 }
