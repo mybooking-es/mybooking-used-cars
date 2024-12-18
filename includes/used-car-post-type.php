@@ -37,7 +37,7 @@ function mybooking_create_cpt_used_car() {
 		'filter_items_list'     => __( 'Filter Vehicle List', 'mybooking-used-cars' ),
 	);
 	$rewrite = array(
-		'slug'                  => __( 'vehicle', 'mybooking-used-cars' ),
+		'slug'                  => __( 'vehicle', 'mybooking-used-cars' ), //// 'vehicle', 
 		'with_front'            => true,
 		'pages'                 => true,
 		'feeds'                 => true,

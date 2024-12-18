@@ -1,640 +1,478 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Mybooking Campers\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-03 11:34+0000\n"
-"PO-Revision-Date: 2023-03-22 09:28+0000\n"
+"Project-Id-Version: Mybooking Used Cars\n"
+"POT-Creation-Date: 2024-12-19 00:16+0100\n"
+"PO-Revision-Date: 2024-12-19 00:20+0100\n"
 "Last-Translator: \n"
-"Language-Team: Español\n"
+"Language-Team: \n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.4; wp-6.1.1\n"
-"X-Domain: mybooking-campers\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: mybooking-used-cars.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:83
-msgid "Add Motorhome category"
-msgstr "Añadir categoría de Autocaravana"
+#: includes/plugin-breadcrumbs.php:18
+msgid "Home"
+msgstr "Inicio"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:19
-msgid "Add New"
-msgstr "Añadir nuevo"
+#: includes/plugin-breadcrumbs.php:149
+msgid "Author archive for "
+msgstr "Archivo de autor para "
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:18
-msgid "Add New Motorhome"
-msgstr "Añadir Autocaravana"
+#: includes/plugin-breadcrumbs.php:193
+msgid "Search query for: "
+msgstr "Consulta de búsqueda para: "
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:17
-msgid "All motorhomes"
-msgstr "Todas las Autocaravanas"
+#: includes/plugin-breadcrumbs.php:198
+msgid "Error 404"
+msgstr "Error 404 - Página no encontrada"
 
-#. Unique ID
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:16
-msgctxt "camper-metabox"
-msgid "Motorhome Details"
-msgstr "Detalles de la Autocaravana"
+#: includes/plugin-breadcrumbs.php:204
+#, php-format
+msgid " ( Page %s )"
+msgstr " (Página %s)"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:92
-msgctxt "camper-single"
+#: includes/templates/archives-used-car.php:42
+#, fuzzy
+msgctxt "blog_message"
+msgid ""
+"No content found. Please publish at least one camper to show something at "
+"here"
+msgstr ""
+"No se ha encontrado ningún contenido. Por favor, publique al menos un "
+"campista para mostrar algo aquí"
+
+#: includes/templates/loop-part.php:66
+msgctxt "used-car-archive"
+msgid "Details"
+msgstr "Detalles"
+
+#: includes/templates/single-used-car.php:135
+msgctxt "used-car-archive"
+msgid "Contact"
+msgstr "Contacto"
+
+#: includes/templates/single-used-car.php:162
+msgctxt "pages_navigation"
+msgid "Pages"
+msgstr "Páginas"
+
+#: includes/templates/used-car-details.php:19
+msgctxt "used-car-archive"
+msgid "Manual"
+msgstr "Manual"
+
+#: includes/templates/used-car-details.php:21
+msgctxt "used-car-archive"
+msgid "Automatic"
+msgstr "Automático"
+
+#: includes/templates/used-car-details.php:30
+msgctxt "used-car-archive"
+msgid "Petrol"
+msgstr "Gasolina"
+
+#: includes/templates/used-car-details.php:33
+msgctxt "used-car-archive"
+msgid "Diesel"
+msgstr "Diesel"
+
+#: includes/templates/used-car-details.php:36
+msgctxt "used-car-archive"
+msgid "Electric"
+msgstr "Eléctrico"
+
+#: includes/templates/used-car-details.php:39
+msgctxt "used-car-archive"
+msgid "Hybrid"
+msgstr "Híbrido"
+
+#: includes/used-car-metaboxes.php:16
+#, fuzzy
+msgctxt "used-car-metabox"
+msgid "Used car Details"
+msgstr "Detalles del coche usado"
+
+#: includes/used-car-metaboxes.php:38
+msgctxt "used-car-single"
+msgid "Image gallery"
+msgstr "Galería de imágenes"
+
+#: includes/used-car-metaboxes.php:92
+#, fuzzy
+msgctxt "used-car-single"
 msgid ""
 "Add multiple images from your media library to create a carousel. Click and "
 "drag to change the order."
 msgstr ""
-"Añade varias imágenes desde la librería de medios para crear un carrusel. "
-"Haz clic y arrastra para ordenar las imágenes."
+"Agregue varias imágenes de su biblioteca multimedia para crear un carrusel. "
+"Haga clic y arrastre para cambiar el orden."
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:717
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:243
-msgctxt "camper-single"
-msgid "Air conditioning"
-msgstr "Climatizado"
+#: includes/used-car-metaboxes.php:106
+#, fuzzy
+msgctxt "used-car-single"
+msgid "Selling price"
+msgstr "Precio de venta"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:780
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:320
-msgctxt "camper-single"
-msgid "Awning"
-msgstr "Toldo"
+#: includes/used-car-metaboxes.php:118
+#, fuzzy
+msgctxt "used-car-single"
+msgid "Selling price."
+msgstr "Precio de venta."
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:337
-msgctxt "camper-single"
-msgid "Beds"
-msgstr "Camas"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:429
-msgctxt "camper-single"
-msgid "Book online"
-msgstr "Reserva online"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:266
-msgctxt "camper-single"
+#: includes/used-car-metaboxes.php:148 includes/used-car-post-type.php:86
 msgid "Brand"
 msgstr "Marca"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:802
-msgctxt "camper-single"
-msgid "Camper ID"
-msgstr "Camper ID"
+#: includes/used-car-metaboxes.php:157
+msgid "Select a brand"
+msgstr "Seleccionar una marca"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:525
-msgctxt "camper-single"
-msgid "Could be Diesel / Benzine or Electric."
-msgstr "Puede ser Diesel / Gasolina / Eléctrico"
+#: includes/used-car-metaboxes.php:167
+#, fuzzy
+msgctxt "used-car-single"
+msgid "The vehicle mark."
+msgstr "La marca del vehículo."
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:111
-msgctxt "camper-single"
-msgid "Daily distribution image"
-msgstr "Imagen de la distribución de día"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:346
-msgctxt "camper-single"
-msgid "Details"
-msgstr "Detalles"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:201
-msgctxt "camper-single"
-msgid "Distribution"
-msgstr "Distribución interior"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:538
-msgctxt "camper-single"
-msgid "Engine"
-msgstr "Potencia"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:401
-msgctxt "camper-single"
-msgid "Engine power"
-msgstr "Potencia del motor"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:373
-msgctxt "camper-single"
-msgid "Enrollement year"
-msgstr "Año de matriculación"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:474
-msgctxt "camper-single"
-msgid "Enrollement year of the vehicle."
-msgstr "Año de matriculación"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:237
-msgctxt "camper-single"
-msgid "Extras"
-msgstr "Extras"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:513
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:387
-msgctxt "camper-single"
-msgid "Fuel type"
-msgstr "Combustible"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:561
-msgctxt "camper-single"
-msgid "Gear"
-msgstr "Cambio de marchas"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:394
-msgctxt "camper-single"
-msgid "Gear type"
-msgstr "Tipo de cambio"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:438
-msgctxt "camper-single"
-msgid "Height"
-msgstr "Altura"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:735
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:265
-msgctxt "camper-single"
-msgid "Hob"
-msgstr "Hornillo"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:38
-msgctxt "camper-single"
-msgid "Image gallery"
-msgstr "Galería de imágenes"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/loop-part.php:89
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:123
-msgctxt "camper-single"
-msgid "Interior"
-msgstr "Interior"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:771
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:309
-msgctxt "camper-single"
-msgid "ISOFIX"
-msgstr "ISOFIX"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:387
-msgctxt "camper-single"
-msgid "Lenght"
-msgstr "Longitud"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:362
-msgctxt "camper-single"
-msgid "License"
-msgstr "Licencia"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:450
-msgctxt "camper-single"
-msgid "Meassures floor to top in mts."
-msgstr "Medidas del techo al suelo en metros"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:400
-msgctxt "camper-single"
-msgid "Meassures front to rear in mts."
-msgstr "Medidas de delante a atrás en metros"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:425
-msgctxt "camper-single"
-msgid "Meassures side to side in mts."
-msgstr "Medidas de lado a lado en metros"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:289
-msgctxt "camper-single"
+#: includes/used-car-metaboxes.php:172
 msgid "Model"
 msgstr "Modelo"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:177
-msgctxt "camper-single"
-msgid "Nightly distribution image"
-msgstr "Imagen de la distribución de noche"
+#: includes/used-car-metaboxes.php:182
+#, fuzzy
+msgid "Select a model"
+msgstr "Seleccione un modelo"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:324
-msgctxt "camper-single"
-msgid "Number of sitting places."
-msgstr "Nº de plazas sentadas"
+#: includes/used-car-metaboxes.php:194
+#, fuzzy
+msgctxt "used-car-single"
+msgid "The vehicle model."
+msgstr "El modelo del vehículo."
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:349
-msgctxt "camper-single"
-msgid "Number of sleeping places."
-msgstr "Nº de plazas para dormir"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:814
-msgctxt "camper-single"
-msgid ""
-"Paste here the ID of this camper if you want to show the booking calendar. "
-"Requires an active <a href=\"https://mybooking.es/registro/\" "
-"title=\"Register your account\" target=\"_blank\">Mybooking account</a> and "
-"a properly set inventory."
-msgstr ""
-"Pega aquí el ID de está camper si quieres mostrar el calendario de reservas. "
-"Requiere una <a href=\"https://mybooking.es/registro/\" title=\"Register "
-"your account\" target=\"_blank\">cuenta de Mybooking</a> y tener el "
-"inventario configurado adecuadamente."
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:709
-msgctxt "camper-single"
-msgid "Pets allowed"
-msgstr "Mascotas admitidas"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:312
-msgctxt "camper-single"
-msgid "Places"
-msgstr "Plazas"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:488
-msgctxt "camper-single"
-msgid "Plate"
-msgstr "Matrícula"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:380
-msgctxt "camper-single"
-msgid "Plate number"
-msgstr "Nº de matrícula"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:500
-msgctxt "camper-single"
-msgid "Plate number, digits and letters."
-msgstr "Nº de matrícula en números y letras"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:584
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:408
-msgctxt "camper-single"
-msgid "Power supply"
-msgstr "Voltaje interno"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:789
-msgctxt "camper-single"
-msgid "Rear Camera"
-msgstr "Cámara trasera"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:331
-msgctxt "camper-single"
-msgid "Rear camera"
-msgstr "Cámara trasera"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:241
-msgctxt "camper-single"
-msgid "Renting or selling price"
-msgstr "Precio de venta o alquiler"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:253
-msgctxt "camper-single"
-msgid ""
-"Set an ammount for selling or renting this item. Leave empty for no price."
-msgstr ""
-"Añade un precio de venta o de alquiler para este producto. Déjalo vacío para "
-"no mostrar ningún precio."
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:159
-msgctxt "camper-single"
-msgid "Set the daily distribution image."
-msgstr "Sube una imagen para mostrar la distribución diurna"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:226
-msgctxt "camper-single"
-msgid "Set the nightly distribution image."
-msgstr "Sube una imagen para mostrar la distribución nocturna"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:726
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:254
-msgctxt "camper-single"
-msgid "Shower"
-msgstr "Ducha"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:744
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:276
-msgctxt "camper-single"
-msgid "Sink"
-msgstr "Fregadero"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:701
-msgctxt "camper-single"
-msgid "Solar panels"
-msgstr "Paneles solares"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:753
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:287
-msgctxt "camper-single"
-msgid "Toilet"
-msgstr "Lavabo"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:762
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:298
-msgctxt "camper-single"
-msgid "TV"
-msgstr "Televisión"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:374
-msgctxt "camper-single"
-msgid "Type of driving license required for this van."
-msgstr "Tipo de licencia necesaria"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:366
-msgctxt "camper-single"
-msgid "Vehicle height"
-msgstr "Altura del vehiculo"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:352
-#| msgid "Vehicle lenght"
-msgctxt "camper-single"
-msgid "Vehicle length"
-msgstr "Longitud del vehículo"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:359
-msgctxt "camper-single"
-msgid "Vehicle width"
-msgstr "Anchura del vehículo"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:413
-msgctxt "camper-single"
-msgid "Width"
-msgstr "Anchura"
-
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:463
-msgctxt "camper-single"
+#: includes/used-car-metaboxes.php:208
+msgctxt "used-car-single"
 msgid "Year"
 msgstr "Año"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/loop-part.php:103
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/loop-part.php:110
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:116
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:137
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/single-camper.php:144
-msgctxt "camper-single"
-msgid "Yes"
-msgstr "Sí"
+#: includes/used-car-metaboxes.php:219
+#, fuzzy
+msgctxt "used-car-single"
+msgid "Year of the vehicle."
+msgstr "Año del vehículo."
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:839
-msgctxt "camper-single"
-msgid "You can show any video on YouTube"
-msgstr "Puedes mostrar cualquier video de YouTube"
+#: includes/used-car-metaboxes.php:233
+#, fuzzy
+msgctxt "used-car-single"
+msgid "Kms"
+msgstr "Kms"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:827
-msgctxt "camper-single"
-msgid "Youtube link"
-msgstr "Enlace a YouTube"
+#: includes/used-car-metaboxes.php:244
+#, fuzzy
+msgctxt "used-car-single"
+msgid "Kms of the vehicle."
+msgstr "Kms del vehículo."
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/mybooking-campers.php:140
-msgid "Campers Archive Bottom"
-msgstr "Lista de Campers Abajo"
+#: includes/used-car-metaboxes.php:258
+msgctxt "used-car-single"
+msgid "Fuel type"
+msgstr "Tipo de combustible"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/mybooking-campers.php:130
-msgid "Campers Archive Top"
-msgstr "Lista de Campers Arriba"
+#: includes/used-car-metaboxes.php:267
+#, fuzzy
+msgid "Select fuel"
+msgstr "Seleccionar combustible"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/mybooking-campers.php:150
-msgid "Campers Post"
-msgstr "Página de Camper"
+#: includes/used-car-metaboxes.php:270
+msgctxt "used-car-single"
+msgid "Petrol"
+msgstr "Gasolina"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:21
-msgid "Edit Motorhome"
-msgstr "Editar Autocaravana"
+#: includes/used-car-metaboxes.php:274
+msgctxt "used-car-single"
+msgid "Diesel"
+msgstr "Diesel"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:36
-msgid "Filter Motorhomes List"
-msgstr "Filtrar Autocaravanas"
+#: includes/used-car-metaboxes.php:278
+msgctxt "used-car-single"
+msgid "Electric"
+msgstr "Eléctrico"
 
-#. URI of the plugin
-#. Author URI of the plugin
-msgid "https://mybooking.es"
-msgstr "https://mybooking.es"
+#: includes/used-car-metaboxes.php:282
+msgctxt "used-car-single"
+msgid "Hybrid"
+msgstr "Híbrido"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:32
-msgid "Insert into Motorhome"
-msgstr "Insertar en Autocaravana"
+#: includes/used-car-metaboxes.php:287
+#, fuzzy
+msgctxt "used-car-single"
+msgid "Could be Diesel / Benzine or Electric."
+msgstr "Puede ser Diesel / Bencina o Eléctrico."
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:39
-msgid "motorhome"
-msgstr "autocaravana"
+#: includes/used-car-metaboxes.php:300
+msgctxt "used-car-single"
+msgid "Engine"
+msgstr "Motor"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:14
-msgid "Motorhome Archives"
-msgstr "Archivo de Autocaravanas"
+#: includes/used-car-metaboxes.php:311
+msgctxt "used-car-single"
+msgid "CV"
+msgstr "CV"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:15
-msgid "Motorhome Attributes"
-msgstr "Atributos de la Autocaravana"
+#: includes/used-car-metaboxes.php:325
+msgctxt "used-car-single"
+msgid "Transmission"
+msgstr "Transmisión"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:28
-msgid "Motorhome Catalog Image"
-msgstr "Imagen de la Autocaravana"
+#: includes/used-car-metaboxes.php:333
+#, fuzzy
+msgid "Select a gear"
+msgstr "Selecciona una marcha"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:82
-msgid "Motorhome category"
-msgstr "Categoría de Autocaravana"
+#: includes/used-car-metaboxes.php:336
+msgctxt "used-car-single"
+msgid "Manual"
+msgstr "Manual"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:34
-msgid "Motorhome list"
-msgstr "Listado de Autocaravanas"
+#: includes/used-car-metaboxes.php:340
+msgctxt "used-car-single"
+msgid "Automatic"
+msgstr "Automático"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:35
-msgid "Motorhome list navigation"
-msgstr "Navegación de la lista de Autocaravanas"
+#: includes/used-car-metaboxes.php:345
+#, fuzzy
+msgctxt "used-car-single"
+msgid "Manual or automatic"
+msgstr "Manual o automático"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:12
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:13
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:45
-msgid "Motorhomes"
-msgstr "Autocaravanas"
+#: includes/used-car-post-type.php:11
+msgctxt "Post Type General Name"
+msgid "Vehicles"
+msgstr "Vehículos"
 
-#. Name of the plugin
-msgid "Mybooking Campers"
-msgstr "Mybooking Campers"
+#: includes/used-car-post-type.php:12
+msgctxt "Post Type Singular Name"
+msgid "Vehicles"
+msgstr "Vehículos"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:46
-msgid "Mybooking Motorhomes."
-msgstr "Mybooking Autocaravanas"
+#: includes/used-car-post-type.php:13 includes/used-car-post-type.php:14
+#: includes/used-car-post-type.php:46
+msgid "Vehicles"
+msgstr "Vehículos"
 
-#. Author of the plugin
-msgid "Mybooking Team"
-msgstr "Mybooking Team"
+#: includes/used-car-post-type.php:15
+#, fuzzy
+msgid "Vehicle Archives"
+msgstr "Archivos de vehículos"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:20
-msgid "New Motorhome"
-msgstr "Nueva Autocaravana"
+#: includes/used-car-post-type.php:16
+msgid "Vehicle Attributes"
+msgstr "Atributos del vehículo"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:84
-msgid "New Motorhome category"
-msgstr "Nueva Categoría de Autocaravana"
+#: includes/used-car-post-type.php:17
+#, fuzzy
+msgid "Parent vehicle:"
+msgstr "Vehículo principal:"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:26
+#: includes/used-car-post-type.php:18
+msgid "All vehicles"
+msgstr "Todos los vehículos"
+
+#: includes/used-car-post-type.php:19
+#, fuzzy
+msgid "Add New vehicle"
+msgstr "Agregar nuevo vehículo"
+
+#: includes/used-car-post-type.php:20
+msgid "Add New"
+msgstr "Añadir nuevo"
+
+#: includes/used-car-post-type.php:21
+#, fuzzy
+msgid "New vehicle"
+msgstr "Vehículo nuevo"
+
+#: includes/used-car-post-type.php:22
+#, fuzzy
+msgid "Edit vehicle"
+msgstr "Editar vehículo"
+
+#: includes/used-car-post-type.php:23
+#, fuzzy
+msgid "Update vehicle"
+msgstr "Actualizar vehículo"
+
+#: includes/used-car-post-type.php:24 includes/used-car-post-type.php:25
+#, fuzzy
+msgid "View vehicle"
+msgstr "Ver vehículo"
+
+#: includes/used-car-post-type.php:26
+#, fuzzy
+msgid "Search vehicle"
+msgstr "Vehículo de búsqueda"
+
+#: includes/used-car-post-type.php:27
 msgid "Not found"
 msgstr "No encontrado"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:27
+#: includes/used-car-post-type.php:28
 msgid "Not found in Trash"
-msgstr "Nada en la papelera"
+msgstr "No encontrado en la papelera"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:16
-msgid "Parent motorhome:"
-msgstr "Autocaravana superior"
+#: includes/used-car-post-type.php:29
+#, fuzzy
+msgid "Vehicle Catalog Image"
+msgstr "Imagen del catálogo de vehículos"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:10
-msgctxt "Post Type General Name"
-msgid "Motorhomes"
-msgstr "Autocaravanas"
+#: includes/used-car-post-type.php:30
+#, fuzzy
+msgid "Set vehicle image"
+msgstr "Establecer la imagen del vehículo"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:11
-msgctxt "Post Type Singular Name"
-msgid "Motorhomes"
-msgstr "Autocaravana"
+#: includes/used-car-post-type.php:31
+#, fuzzy
+msgid "Remove vehicle image"
+msgstr "Eliminar la imagen del vehículo"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:30
-msgid "Remove Motorhome image"
-msgstr "Eliminar imagen de Autocaravana"
+#: includes/used-car-post-type.php:32
+#, fuzzy
+msgid "Use as vehicle image"
+msgstr "Uso como imagen de vehículo"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/templates/loop-part.php:116
-msgctxt "renting_choose_product"
-msgid "Details"
-msgstr "Alquilar"
+#: includes/used-car-post-type.php:33
+#, fuzzy
+msgid "Insert into vehicle"
+msgstr "Insertar en el vehículo"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:25
-msgid "Search Motorhome"
-msgstr "Buscar Autocaravanas"
+#: includes/used-car-post-type.php:34
+#, fuzzy
+msgid "Uploaded to this vehicle"
+msgstr "Subido a este vehículo"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:29
-msgid "Set Motorhome image"
-msgstr "Ajustar imagen de Autocaravana"
+#: includes/used-car-post-type.php:35
+#, fuzzy
+msgid "Vehicle list"
+msgstr "Lista de vehículos"
 
-#. Description of the plugin
-msgid "Simple plugin to create a Custom Post Type to show camper pages"
-msgstr "Plugin simple para crear páginas de Camper"
+#: includes/used-car-post-type.php:36
+#, fuzzy
+msgid "Vehicle list navigation"
+msgstr "Navegación por la lista de vehículos"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:22
-msgid "Update Motorhome"
-msgstr "Actualizar Autocaravana"
+#: includes/used-car-post-type.php:37
+#, fuzzy
+msgid "Filter Vehicle List"
+msgstr "Filtrar lista de vehículos"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:33
-msgid "Uploaded to this Motorhome"
-msgstr "Subido a esta Autocaravana"
+#: includes/used-car-post-type.php:40
+msgid "vehicle"
+msgstr "vehiculo"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:31
-msgid "Use as Motorhome image"
-msgstr "Usar como imagen para Autocaravana"
+#: includes/used-car-post-type.php:47
+#, fuzzy
+msgid "Mybooking vehicles."
+msgstr "Vehículos Mybooking."
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:23
-msgid "View Motorhome"
-msgstr "Ver Autocaravana"
+#: includes/used-car-post-type.php:85
+#, fuzzy
+msgid "Brands and models"
+msgstr "Marcas y modelos"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/includes/camper-post-type.php:24
-msgid "View Motorhomes"
-msgstr "Ver Autocaravanas"
+#: includes/used-car-post-type.php:87
+msgid "Search brands"
+msgstr "Buscar marcas"
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/mybooking-campers.php:132
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/mybooking-campers.php:142
+#: includes/used-car-post-type.php:88
+msgid "All brands"
+msgstr "Todas las marcas"
+
+#: includes/used-car-post-type.php:89
+msgid "Edit brand"
+msgstr "Editar marca"
+
+#: includes/used-car-post-type.php:90
+msgid "Update brand"
+msgstr "Actualizar bodega"
+
+#: includes/used-car-post-type.php:91
+#, fuzzy
+msgid "Add brand"
+msgstr "Añade marca"
+
+#: includes/used-car-post-type.php:92
+msgid "New brand"
+msgstr "Nueva marca"
+
+#: includes/used-car-post-type.php:166
+msgid "Models"
+msgstr "Modelos"
+
+#: includes/used-car-post-type.php:180 includes/used-car-post-type.php:201
+#, fuzzy
+msgid "View Models"
+msgstr "Ver modelos"
+
+#: includes/used-car-post-type.php:265
+msgid "Add model"
+msgstr "Añadir modelo"
+
+#: mybooking-used-cars.php:112
+#, fuzzy
+msgid "Used cars Archive Top"
+msgstr "Coches de ocasión Archive Top"
+
+#: mybooking-used-cars.php:114 mybooking-used-cars.php:124
+#, fuzzy
 msgid "Widgets in this area will be shown on campers archives page."
-msgstr "Los widgets de esta zona se muestran en el listado de Campers"
+msgstr ""
+"Los widgets en esta área se mostrarán en la página de archivos de los "
+"campistas."
 
-#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
-#: VANS/bookingvans-plugin/mybooking-campers.php:152
-msgid "Widgets in this area will be shown on campers single page."
-msgstr "Los widgets de esta zona se muestran en las páginas de Campers"
+#: mybooking-used-cars.php:122
+#, fuzzy
+msgid "Used cars Archive Bottom"
+msgstr "Autos usados Archive Bottom"
+
+#: mybooking-used-cars.php:132
+#, fuzzy
+msgid "Used cars Post"
+msgstr "Autos usados Publicar"
+
+#: mybooking-used-cars.php:134
+#, fuzzy
+msgid "Widgets in this area will be shown on used cars single page."
+msgstr ""
+"Los widgets en esta área se mostrarán en los autos usados de una sola "
+"página."
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+msgid "Mybooking Used Cars"
+msgstr "Mybooking Coches Usados"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "https://mybooking.es"
+msgstr "https://mybooking.es"
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid "Simple plugin to create a Custom Post Type to show used cars pages"
+msgstr ""
+"Plugin simple para crear un tipo de publicación personalizada para mostrar "
+"páginas de autos usados"
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "Mybooking Team"
+msgstr "Equipo de Mybooking"
