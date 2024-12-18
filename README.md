@@ -1,10 +1,10 @@
-# Mybooking Campers
+# Mybooking Used Car
 
 Tags: custom-post-type
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A simple plugin for generating Mybooking camper/motorhome custom post type.
+A simple plugin for generating Mybooking used cars custom post type.
 
 IMPORTANT: this plugin **depends on Mybooking Reservation Engine**
 
