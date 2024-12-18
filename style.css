@@ -1,0 +1,690 @@
+/*
+*  MYBOOKING CAMPERS
+*  -----------------
+* @version 0.0.5
+* @package WordPress
+* @subpackage Mybooking Campers Plugin
+* @since 1.0.0
+*/
+
+
+/* MYBOOKING FRAMEWORK */
+
+:root {
+  /* Color palette */
+  --mb-camper-accent-color: green;
+
+  --mb-info-color: var(--mb-camper-accent-color);
+  --mb-primary-selected-date: #2193f2;
+  --mb-secondary-selected-date: #9cdbf7;
+  --mb-success-color: #3DD992;
+  --mb-danger-color: #E6546E;
+  --mb-warning-color: #FFB74D;
+  --mb-light-color:  #DDDDDD;
+  --mb-lighter-color: #EEEEEE;
+
+  --mb-border-color: #DDD;
+  --mb-border-radius: 5px;
+  --mb-background-color: #EEE;
+  --mb-dark-background-color: #424242;
+  --mb-negative-text-color: #FFF;
+  --mb-btn-text-case: uppercase;
+}
+
+/** Grid **/
+
+.mybooking-used-cars .mb-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.mybooking-used-cars .mb-row {
+  display: block!important;
+  margin: 0 auto;
+  clear: both;
+}
+
+.mb-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Columns */
+
+[class*='mb-col-sm-'],
+[class*='mb-col-md-'],
+[class*='mb-col-lg-'] {
+  float: left;
+  padding: 0.8rem;
+}
+
+.mb-col-sm-1        { width: 8.33%; }
+.mb-col-sm-2        { width: 16.66%; }
+.mb-col-sm-3        { width: 25%; }
+.mb-col-sm-4        { width: 33.33%; }
+.mb-col-sm-5        { width: 41.66%; }
+.mb-col-sm-6        { width: 50%; }
+.mb-col-sm-7        { width: 58.33%; }
+.mb-col-sm-8        { width: 66.66%; }
+.mb-col-sm-9        { width: 75%; }
+.mb-col-sm-10       { width: 83.33%; }
+.mb-col-sm-11       { width: 91.66%; }
+.mb-col-sm-12       { width: 100%; }
+
+[class*='mb-col-md-'],
+[class*='mb-col-lg-'] {
+  width: 100%;
+} /* Stacked by default on mobile */
+
+@media only screen and ( min-width: 575.98px ) {
+  .mb-col-md-1        { width: 8.33%; }
+  .mb-col-md-2        { width: 16.66%; }
+  .mb-col-md-3        { width: 25%; }
+  .mb-col-md-4        { width: 33.33%; }
+  .mb-col-md-5        { width: 41.66%; }
+  .mb-col-md-6        { width: 50%; }
+  .mb-col-md-7        { width: 58.33%; }
+  .mb-col-md-8        { width: 66.66%; }
+  .mb-col-md-9        { width: 75%; }
+  .mb-col-md-10       { width: 83.33%; }
+  .mb-col-md-11       { width: 91.66%; }
+  .mb-col-md-12       { width: 100%; }
+
+
+  .mb-col-md-offset-1        { margin-left: 8.33%; }
+  .mb-col-md-offset-2        { margin-left: 16.66%; }
+  .mb-col-md-offset-3        { margin-left: 25%; }
+  .mb-col-md-offset-4        { margin-left: 33.33%; }
+  .mb-col-md-offset-5        { margin-left: 41.66%; }
+  .mb-col-md-offset-6        { margin-left: 50%; }
+  .mb-col-md-offset-7        { margin-left: 58.33%; }
+  .mb-col-md-offset-8        { margin-left: 66.66%; }
+  .mb-col-md-offset-9        { margin-left: 75%; }
+  .mb-col-md-offset-10       { margin-left: 83.33%; }
+  .mb-col-md-offset-11       { margin-left: 91.66%; }
+  .mb-col-md-offset-12       { margin-left: 100%; }
+
+  [class*='mb-col'] {
+    padding: 1rem;
+  }
+}
+
+@media only screen and ( min-width: 991.98px ) {
+  .mb-col-lg-1        { width: 8.33%; }
+  .mb-col-lg-2        { width: 16.66%; }
+  .mb-col-lg-3        { width: 25%; }
+  .mb-col-lg-4        { width: 33.33%; }
+  .mb-col-lg-5        { width: 41.66%; }
+  .mb-col-lg-6        { width: 50%; }
+  .mb-col-lg-7        { width: 58.33%; }
+  .mb-col-lg-8        { width: 66.66%; }
+  .mb-col-lg-9        { width: 75%; }
+  .mb-col-lg-10       { width: 83.33%; }
+  .mb-col-lg-11       { width: 91.66%; }
+  .mb-col-lg-12       { width: 100%; }
+
+  .mb-col-lg-offset-1        { margin-left: 8.33%; }
+  .mb-col-lg-offset-2        { margin-left: 16.66%; }
+  .mb-col-lg-offset-3        { margin-left: 25%; }
+  .mb-col-lg-offset-4        { margin-left: 33.33%; }
+  .mb-col-lg-offset-5        { margin-left: 41.66%; }
+  .mb-col-lg-offset-6        { margin-left: 50%; }
+  .mb-col-lg-offset-7        { margin-left: 58.33%; }
+  .mb-col-lg-offset-8        { margin-left: 66.66%; }
+  .mb-col-lg-offset-9        { margin-left: 75%; }
+  .mb-col-lg-offset-10       { margin-left: 83.33%; }
+  .mb-col-lg-offset-11       { margin-left: 91.66%; }
+  .mb-col-lg-offset-12       { margin-left: 100%; }
+
+
+  [class*='mb-col'] {
+    padding: 1.25rem;
+  }
+}
+
+/* Grid Helpers */
+
+.mb-col-right {
+  float: right;
+} /* Flips column order if applied to starting column */
+
+.mb-col-center {
+  float: none;
+  margin: 0 auto;
+} /* Centers column if less than mb-col-*-12 */
+
+/* Shortcodes grid */
+.mb-shortcode .container {
+  padding: 0;
+}
+
+/* Cards */
+
+.mb-card {
+  display: block;
+  border: 1px solid var(--mb-border-color);
+  border-radius: var(--mb-border-radius)
+}
+
+.mb-card.inline {
+  display: flex;
+  align-items: center;
+}
+
+.mb-card::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.mb-card_header {
+  margin: 0;
+  padding: 1rem;
+  border-bottom: 1px solid var(--mb-border-color);
+}
+
+.mb-card_header h2,
+.mb-card_header h3,
+.mb-card_header h4,
+.mb-card_header h5 {
+  margin: 0;
+}
+
+.mb-card_body {
+  padding: 1rem;
+}
+
+.mb-card_footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0 0 0;
+  padding: 1rem;
+  border-top: 1px solid var(--mb-border-color);
+}
+
+/* Lists */
+
+.mb-list {
+  padding: 0;
+  margin: 0 0 1rem 0!important;
+  list-style: none;
+}
+
+.mb-list_title {
+  font-size: 1.6em;
+}
+
+.mb-list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.mb-list.border {
+  display: block;
+  border: 1px solid var(--mb-border-color);
+  border-radius: var(--mb-border-radius);
+}
+
+.mb-list.border::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.mb-list.border .mb-list-item {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--mb-border-color);
+}
+
+.mb-list.border .mb-list-item:last-of-type {
+  border-bottom: none;
+}
+
+.mb-list.shadow {
+  box-shadow: 0 0 20px 5px var(--mb-light-color);
+  padding: 0.5rem 1rem;
+}
+
+.mb-list.has-separator {
+  display: block;
+}
+
+.mb-list.has-separator .mb-list-item {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--mb-border-color);
+}
+
+.mb-list.has-separator .mb-list-item:last-of-type {
+  border-bottom: none;
+}
+
+.mb-list-element.secondary {
+  font-weight: 800;
+}
+
+.mb-list-element.info {
+  font-weight: 800;
+  color: var(--mb-info-color);
+}
+
+.mb-list-element.success {
+  font-weight: 800;
+  color: var(--mb-success-color);
+}
+
+.mb-list-element.danger {
+  font-weight: 800;
+  color: var(--mb-danger-color);
+}
+
+.mb-list-element.warning {
+  font-weight: 800;
+  color: var(--mb-warning-color);
+}
+
+
+/* CAMPERS CPT STYLES *********************************************************/
+
+/* Resets */
+
+.mybooking-used-cars .wp-block-gallery img,
+.mybooking-used-cars .wp-block-image img {
+  border-radius: 5px;
+}
+
+.mybooking-used-cars .wp-block-gallery {
+  margin-bottom: 0;
+}
+
+.mybooking-product_calendar-step-list {
+  border: none!important;
+}
+
+.mybooking-product-carousel-inner {
+  max-width: 100%!important;
+}
+
+/* LOOP */
+
+/* Grid */
+.mybooking-used-cars_grid {
+  display: flex;
+  justify-content: flex-start;
+	flex-wrap: wrap;
+  margin: 0 0 2rem 0
+}
+
+.mybooking-used-cars_grid .used-car {
+  width: 33.333333333%;
+}
+
+@media ( max-width: 575.98px ) {
+	.mybooking-used-cars_grid {
+		display: block;
+	}
+	.mybooking-used-cars_grid .used-car {
+		width: 100%;
+	}
+}
+
+/* Card */
+.mybooking-used-cars_card {
+  position: relative;
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
+  box-shadow: 0px 0px 20px #DDD!important;
+  border: 1px solid var(--mb-light-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mybooking-used-cars_card:hover {
+  box-shadow: 0px 1px 3px #DDD!important;
+}
+
+/* Card image */
+.mybooking-used-cars_card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.mybooking-used-cars_card-image-container {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--mb-light-color);
+}
+
+.mybooking-used-cars_card-image-container img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Card body */
+.mybooking-used-cars .mybooking-used-cars_card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem!important;
+}
+
+.mybooking-used-cars_card-title {
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mybooking-used-cars_card-price {
+  color: var(--brand-primary, var(--mb-camper-accent-color));
+  font-size: 1.3em;
+  line-height: 1.5rem;
+  font-weight: 800;
+}
+
+/* Card icons */
+.mybooking-used-cars_details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 1rem 0 0 0;
+  font-size: 1em;
+  flex-wrap: wrap;
+}
+
+.mybooking-used-cars_characteristic {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+  padding: 0 0 0.5rem 0;
+} @media ( min-width: 575.98px ) {
+  .mybooking-used-cars_characteristic {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+/* Card button */
+.mybooking-used-cars_btn-book {
+  padding: 10px 20px!important;
+  margin: 1rem 0 0 0;
+  background-color: var(--brand-primary, var(--mb-camper-accent-color))!important;
+  border: 1px var(--brand-primary, var(--mb-camper-accent-color))!important;
+  border-radius: 5px!important;
+  color: white!important;
+  font-size: 1em!important;
+  font-weight: 800!important;
+  text-transform: uppercase!important;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.mybooking-used-cars_btn-book:hover {
+  background-color: #333!important;
+  border: 1px solid #333!important;
+  text-decoration: none!important;
+  color: white!important;
+}
+
+/* Card categories */
+.mybooking-used-cars_card-category {
+  position: absolute;
+  top: 215px;
+  left: 1rem;
+}
+
+.mybooking-used-cars_card-category-item {
+  padding: 0.3rem 0.7rem;
+  background-color: #212121;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+}
+
+
+/* SINGLE */
+
+/* Breadcrumb */
+.mybooking-breadcrumb {
+  margin-bottom: 1rem;
+}
+
+.mybooking-breadcrumb_item {
+  font-weight: 800;
+  color: var(--brand-primary, var(--mb-camper-accent-color))!important;
+  text-decoration: none;
+}
+
+.mybooking-breadcrumb_item:hover {
+  text-decoration: none;
+}
+
+.mybooking-breadcrumb_item.current {
+  color: #424242!important;
+}
+
+/* Header */
+.mybooking-used-cars_post-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #DDD;
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1.1;
+} @media ( min-width: 575.98px ) {
+  .mybooking-used-cars_post-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.mybooking-used-cars_price {
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: var(--brand-primary, var(--mb-camper-accent-color))
+}
+
+.mybooking-used-cars_post-subheader {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0 0 1rem 0;
+  border-bottom: 1px solid var(--mb-border-color);
+} @media ( min-width: 575.98px ) {
+  .mybooking-used-cars_post-subheader {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 0.5rem 0;
+  }
+}
+
+.mybooking-used-cars_post .mybooking-used-cars_card-category {
+  position: initial;
+} @media ( min-width: 575.98px ) {
+  .mybooking-used-cars_post .mybooking-used-cars_card-category {
+    margin: 0;
+  }
+}
+
+.mybooking-used-cars_post .mybooking-used-cars_card-category-item {
+  font-size: 1em;
+}
+
+/* Key characteristics */
+.mybooking-used-cars_post .mybooking-used-cars_details {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1em;
+} @media ( min-width: 575.98px ) {
+  .mybooking-used-cars_post .mybooking-used-cars_details {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+.mybooking-used-cars_post .mybooking-used-cars_characteristic {
+  gap: 0;
+  flex-direction: column;
+  align-items: center;
+} @media ( min-width: 575.98px ) {
+  .mybooking-used-cars_post .mybooking-used-cars_characteristic {
+    gap: 0.1rem;
+    flex-direction: row;
+  }
+}
+
+.mybooking-used-cars_characteristic:last-of-type {
+  border: none;
+}
+
+.mybooking-used-cars_characteristic-icon {
+  max-width: 30px!important; /* Must be important! to avoid Elementor responsive styles conflict */
+  min-width: 30px;
+}
+
+/* Calendar */
+.mybooking-used-cars_product-form {
+  margin-bottom: 3rem;
+}
+
+.mb-card.mybooking-used-cars_product-form {
+  background-color: var(--mb-lighter-color);
+  padding: 1rem;
+}
+
+/* Carousel */
+.mybooking-used-cars_carousel {
+  padding-bottom: 3rem;
+}
+
+.mybooking-used-cars_carousel-img {
+  border-radius: 5px;
+}
+
+.mybooking-used-cars_carousel .slick-dots {
+  bottom: 1rem;
+}
+
+.mybooking-used-cars_carousel .slick-dots li button::before {
+  font-size: 15px;
+  color: #666;
+}
+
+.mybooking-used-cars_carousel .slick-dots li.slick-active button::before {
+  color: var(--brand-primary, var(--mb-camper-accent-color));
+}
+
+/* Responsive videos */
+.mybooking-used-cars_video iframe {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+}
+
+/* Content */
+.mybooking-used-cars_entry-content {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.mybooking-used-cars_image-container {
+  margin: 0 0 1rem 0;
+}
+
+.mybooking-used-cars_image-container img {
+  border-radius: 5px!important;
+}
+
+.mybooking-used-cars_post .wp-block-image {
+  margin-bottom: 2em!important;
+}
+
+/* Details listings */
+.mybooking-used-cars_section-title {
+  padding-bottom:0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--mb-border-color);
+  font-size: 2em;
+}
+
+.mybooking-used-cars_details-list {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.mybooking-used-cars_details-list .dashicons {
+  font-size: 25px;
+}
+
+.mybooking-used-cars_details-list .dashicons.dashicons-yes {
+  color:  var(--mb-success-color);
+}
+
+.mybooking-used-cars_details-list .dashicons.dashicons-no {
+  color:  var(--mb-danger-color);
+}
+
+.mybooking-used-cars_details .dashicons {
+  color: var(--brand-primary, var(--mb-camper-accent-color));
+}
+
+/* Sidebar */
+.mybooking-used-cars_sidebar {
+  padding: 0 1rem;
+}
+
+.mybooking-used-cars_widget-area {
+  margin: 0 0 3rem 0;
+}
+
+.mybooking-used-cars_single-widget-area {
+  margin: 1rem 0 0 0;
+}
+
+/* Pagination */
+.mybooking-used-cars .pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.mybooking-used-cars .pagination a,
+.mybooking-used-cars .pagination a:hover {
+    border: none!important;
+}
+
+.mybooking-used-cars .pagination .page-numbers {
+  font-weight: 800;
+}
+
+.mybooking-used-cars .page-numbers.current {
+  border: none!important;
+  border-radius: 100%;
+  background-color: var(--brand-primary, var(--mb-camper-accent-color));
+}
+
+.mybooking-used-cars_footer-nav {
+  margin-top: 6rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--mb-border-color);
+}

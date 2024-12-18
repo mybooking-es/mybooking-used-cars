@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="solar_panel.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   x="0px"
+   y="0px"
+   viewBox="102 20.9 800 800"
+   style="enable-background:new 102 20.9 800 800;"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs17" />
+<sodipodi:namedview
+   id="base"
+   units="px"
+   inkscape:window-y="30"
+   inkscape:window-x="0"
+   inkscape:window-height="1019"
+   inkscape:window-width="1920"
+   inkscape:guide-bbox="true"
+   inkscape:pageopacity="0.0"
+   inkscape:pageshadow="2"
+   inkscape:document-units="px"
+   inkscape:current-layer="svg8"
+   inkscape:window-maximized="1"
+   inkscape:document-rotation="0"
+   borderopacity="1.0"
+   inkscape:zoom="0.75306872"
+   inkscape:cx="166.65146"
+   inkscape:cy="481.36377"
+   showguides="true"
+   pagecolor="#ffffff"
+   showgrid="false"
+   bordercolor="#666666"
+   inkscape:showpageshadow="2"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1">
+	<sodipodi:guide
+   id="guide10"
+   position="0,211.66666"
+   orientation="0,800"
+   inkscape:locked="false" />
+	<sodipodi:guide
+   id="guide12"
+   position="211.66666,211.66666"
+   orientation="800,0"
+   inkscape:locked="false" />
+	<sodipodi:guide
+   id="guide14"
+   position="211.66666,0"
+   orientation="0,-800"
+   inkscape:locked="false" />
+	<sodipodi:guide
+   id="guide16"
+   position="0,0"
+   orientation="-800,0"
+   inkscape:locked="false" />
+	<sodipodi:guide
+   id="guide65"
+   position="12.913271,259.30402"
+   orientation="1,0"
+   inkscape:locked="false" />
+	<sodipodi:guide
+   id="guide67"
+   position="198.42693,260.17963"
+   orientation="1,0"
+   inkscape:locked="false" />
+	<sodipodi:guide
+   id="guide69"
+   position="-240.51312,198.52088"
+   orientation="0,-1"
+   inkscape:locked="false" />
+	<sodipodi:guide
+   id="guide71"
+   position="-205.82869,13.316532"
+   orientation="0,-1"
+   inkscape:locked="false" />
+	<inkscape:grid
+   type="xygrid"
+   id="grid77" />
+</sodipodi:namedview>
+
+
+<path
+   id="path3420"
+   style="color:#000000;fill:#000000;stroke-width:0.999999;stroke-linejoin:round;-inkscape-stroke:none"
+   d="M 350.83398 119.05234 A 19.989876 20.010079 0 0 0 330.8457 139.06211 L 330.8457 165.79453 A 19.989876 20.010079 0 0 0 350.83398 185.8043 A 19.989876 20.010079 0 0 0 370.82422 165.79453 L 370.82422 139.06211 A 19.989876 20.010079 0 0 0 350.83398 119.05234 z M 465.96484 167.53281 A 19.989876 20.010079 0 0 0 462.53125 168.13828 A 19.989876 20.010079 0 0 0 453.57031 173.31016 L 434.66797 192.2125 A 19.989876 20.010079 0 0 0 434.65234 220.51133 A 19.989876 20.010079 0 0 0 462.92188 220.52695 L 481.82617 201.62656 A 19.989876 20.010079 0 0 0 481.83789 173.32578 A 19.989876 20.010079 0 0 0 465.96484 167.53281 z M 232.2207 167.53477 A 19.989876 20.010079 0 0 0 219.83008 173.32578 A 19.989876 20.010079 0 0 0 219.8457 201.62656 L 238.74805 220.52695 A 19.989876 20.010079 0 0 0 267.01562 220.51133 A 19.989876 20.010079 0 0 0 267.00195 192.2125 L 248.10156 173.31211 A 19.989876 20.010079 0 0 0 239.13672 168.13828 A 19.989876 20.010079 0 0 0 232.2207 167.53477 z M 353.67383 212.73789 C 307.49256 212.29757 267.43804 246.64923 261.36328 292.85312 C 255.09258 340.54746 287.04187 385.33489 334.18164 395.01719 L 342.27734 355.84141 C 315.27616 350.29548 297.44516 325.26491 301.02734 298.01914 C 304.60954 270.77338 328.27124 251.21473 355.78711 252.81602 C 383.30297 254.41728 404.56861 276.62731 404.95703 304.10898 L 444.95898 303.4957 C 444.27924 255.40172 406.21118 215.68644 358.16211 212.89023 C 356.66058 212.80285 355.16355 212.75209 353.67383 212.73789 z M 185.56836 284.31797 A 19.989876 20.010079 0 0 0 165.57617 304.32773 A 19.989876 20.010079 0 0 0 185.56836 324.3375 L 212.29688 324.3375 A 19.989876 20.010079 0 0 0 232.28711 304.32773 A 19.989876 20.010079 0 0 0 212.29688 284.31797 L 185.56836 284.31797 z M 384.91992 323.33164 A 19.992135 20.01175 0 0 0 365.24609 339.80039 L 314.40234 622.74961 A 19.992135 20.01175 0 0 0 334.07812 646.3043 L 801.89844 646.3043 A 19.992135 20.01175 0 0 0 821.57227 622.74961 L 770.72852 339.80039 A 19.992135 20.01175 0 0 0 751.05273 323.33164 L 384.91992 323.33164 z M 401.63477 363.35117 L 549.21875 363.35117 L 549.21875 457.30625 L 384.75195 457.30625 L 401.63477 363.35117 z M 589.19922 363.35117 L 734.33789 363.35117 L 751.2207 457.30625 L 589.19922 457.30625 L 589.19922 363.35117 z M 251.14258 382.35117 A 19.989876 20.010079 0 0 0 247.71094 382.95469 A 19.989876 20.010079 0 0 0 238.74805 388.13047 L 219.8457 407.03281 A 19.989876 20.010079 0 0 0 219.83008 435.32969 A 19.989876 20.010079 0 0 0 248.10156 435.34531 L 267.00195 416.44297 A 19.989876 20.010079 0 0 0 267.01562 388.14414 A 19.989876 20.010079 0 0 0 251.14258 382.35117 z M 377.56055 497.32578 L 549.21875 497.32578 L 549.21875 606.28477 L 357.98242 606.28477 L 377.56055 497.32578 z M 589.19922 497.32578 L 758.41211 497.32578 L 777.99023 606.28477 L 589.19922 606.28477 L 589.19922 497.32578 z " /></svg>

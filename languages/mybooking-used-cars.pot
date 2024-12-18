@@ -1,0 +1,632 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Mybooking Campers\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-22 09:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0\n"
+"X-Domain: mybooking-campers"
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:83
+msgid "Add Motorhome category"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:19
+msgid "Add New"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:18
+msgid "Add New Motorhome"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:17
+msgid "All motorhomes"
+msgstr ""
+
+#. Unique ID
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:16
+msgctxt "camper-metabox"
+msgid "Motorhome Details"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:92
+msgctxt "camper-single"
+msgid ""
+"Add multiple images from your media library to create a carousel. Click and "
+"drag to change the order."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:717
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:243
+msgctxt "camper-single"
+msgid "Air conditioning"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:780
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:320
+msgctxt "camper-single"
+msgid "Awning"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:337
+msgctxt "camper-single"
+msgid "Beds"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:429
+msgctxt "camper-single"
+msgid "Book online"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:266
+msgctxt "camper-single"
+msgid "Brand"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:802
+msgctxt "camper-single"
+msgid "Camper ID"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:525
+msgctxt "camper-single"
+msgid "Could be Diesel / Benzine or Electric."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:111
+msgctxt "camper-single"
+msgid "Daily distribution image"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:346
+msgctxt "camper-single"
+msgid "Details"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:201
+msgctxt "camper-single"
+msgid "Distribution"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:538
+msgctxt "camper-single"
+msgid "Engine"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:401
+msgctxt "camper-single"
+msgid "Engine power"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:373
+msgctxt "camper-single"
+msgid "Enrollement year"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:474
+msgctxt "camper-single"
+msgid "Enrollement year of the vehicle."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:237
+msgctxt "camper-single"
+msgid "Extras"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:513
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:387
+msgctxt "camper-single"
+msgid "Fuel type"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:561
+msgctxt "camper-single"
+msgid "Gear"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:394
+msgctxt "camper-single"
+msgid "Gear type"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:438
+msgctxt "camper-single"
+msgid "Height"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:735
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:265
+msgctxt "camper-single"
+msgid "Hob"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:38
+msgctxt "camper-single"
+msgid "Image gallery"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/loop-part.php:89
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:123
+msgctxt "camper-single"
+msgid "Interior"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:771
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:309
+msgctxt "camper-single"
+msgid "ISOFIX"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:387
+msgctxt "camper-single"
+msgid "Lenght"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:362
+msgctxt "camper-single"
+msgid "License"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:450
+msgctxt "camper-single"
+msgid "Meassures floor to top in mts."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:400
+msgctxt "camper-single"
+msgid "Meassures front to rear in mts."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:425
+msgctxt "camper-single"
+msgid "Meassures side to side in mts."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:289
+msgctxt "camper-single"
+msgid "Model"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:177
+msgctxt "camper-single"
+msgid "Nightly distribution image"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:324
+msgctxt "camper-single"
+msgid "Number of sitting places."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:349
+msgctxt "camper-single"
+msgid "Number of sleeping places."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:814
+msgctxt "camper-single"
+msgid ""
+"Paste here the ID of this camper if you want to show the booking calendar. "
+"Requires an active <a href=\"https://mybooking.es/registro/\" "
+"title=\"Register your account\" target=\"_blank\">Mybooking account</a> and "
+"a properly set inventory."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:709
+msgctxt "camper-single"
+msgid "Pets allowed"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:312
+msgctxt "camper-single"
+msgid "Places"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:488
+msgctxt "camper-single"
+msgid "Plate"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:380
+msgctxt "camper-single"
+msgid "Plate number"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:500
+msgctxt "camper-single"
+msgid "Plate number, digits and letters."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:584
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:408
+msgctxt "camper-single"
+msgid "Power supply"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:789
+msgctxt "camper-single"
+msgid "Rear Camera"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:331
+msgctxt "camper-single"
+msgid "Rear camera"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:241
+msgctxt "camper-single"
+msgid "Renting or selling price"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:253
+msgctxt "camper-single"
+msgid ""
+"Set an ammount for selling or renting this item. Leave empty for no price."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:159
+msgctxt "camper-single"
+msgid "Set the daily distribution image."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:226
+msgctxt "camper-single"
+msgid "Set the nightly distribution image."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:726
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:254
+msgctxt "camper-single"
+msgid "Shower"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:744
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:276
+msgctxt "camper-single"
+msgid "Sink"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:701
+msgctxt "camper-single"
+msgid "Solar panels"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:753
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:287
+msgctxt "camper-single"
+msgid "Toilet"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:762
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:298
+msgctxt "camper-single"
+msgid "TV"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:374
+msgctxt "camper-single"
+msgid "Type of driving license required for this van."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:366
+msgctxt "camper-single"
+msgid "Vehicle height"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:352
+msgctxt "camper-single"
+msgid "Vehicle length"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:359
+msgctxt "camper-single"
+msgid "Vehicle width"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:413
+msgctxt "camper-single"
+msgid "Width"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:463
+msgctxt "camper-single"
+msgid "Year"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/loop-part.php:103
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/loop-part.php:110
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:116
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:137
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/single-camper.php:144
+msgctxt "camper-single"
+msgid "Yes"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:839
+msgctxt "camper-single"
+msgid "You can show any video on YouTube"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-metaboxes.php:827
+msgctxt "camper-single"
+msgid "Youtube link"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/mybooking-campers.php:140
+msgid "Campers Archive Bottom"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/mybooking-campers.php:130
+msgid "Campers Archive Top"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/mybooking-campers.php:150
+msgid "Campers Post"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:21
+msgid "Edit Motorhome"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:36
+msgid "Filter Motorhomes List"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://mybooking.es"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:32
+msgid "Insert into Motorhome"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:39
+msgid "motorhome"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:14
+msgid "Motorhome Archives"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:15
+msgid "Motorhome Attributes"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:28
+msgid "Motorhome Catalog Image"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:82
+msgid "Motorhome category"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:34
+msgid "Motorhome list"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:35
+msgid "Motorhome list navigation"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:12
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:13
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:45
+msgid "Motorhomes"
+msgstr ""
+
+#. Name of the plugin
+msgid "Mybooking Campers"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:46
+msgid "Mybooking Motorhomes."
+msgstr ""
+
+#. Author of the plugin
+msgid "Mybooking Team"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:20
+msgid "New Motorhome"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:84
+msgid "New Motorhome category"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:26
+msgid "Not found"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:27
+msgid "Not found in Trash"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:16
+msgid "Parent motorhome:"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:10
+msgctxt "Post Type General Name"
+msgid "Motorhomes"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:11
+msgctxt "Post Type Singular Name"
+msgid "Motorhomes"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:30
+msgid "Remove Motorhome image"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/templates/loop-part.php:116
+msgctxt "renting_choose_product"
+msgid "Details"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:25
+msgid "Search Motorhome"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:29
+msgid "Set Motorhome image"
+msgstr ""
+
+#. Description of the plugin
+msgid "Simple plugin to create a Custom Post Type to show camper pages"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:22
+msgid "Update Motorhome"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:33
+msgid "Uploaded to this Motorhome"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:31
+msgid "Use as Motorhome image"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:23
+msgid "View Motorhome"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/includes/camper-post-type.php:24
+msgid "View Motorhomes"
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/mybooking-campers.php:132
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/mybooking-campers.php:142
+msgid "Widgets in this area will be shown on campers archives page."
+msgstr ""
+
+#: media/hector/Mybooking/00_MYBOOKING/CLIENTES/BOOKING
+#: VANS/bookingvans-plugin/mybooking-campers.php:152
+msgid "Widgets in this area will be shown on campers single page."
+msgstr ""
