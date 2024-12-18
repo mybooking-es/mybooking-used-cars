@@ -385,7 +385,7 @@
   text-overflow: ellipsis;
 }
 
-.mybooking-used-cars_card-price-price {
+.mybooking-used-cars_card-price {
   color: var(--brand-primary, var(--mb-camper-accent-color));
   font-size: 1.3em;
   line-height: 1.5rem;
