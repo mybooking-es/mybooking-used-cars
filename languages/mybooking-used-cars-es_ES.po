@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mybooking Used Cars\n"
 "POT-Creation-Date: 2024-12-19 00:16+0100\n"
-"PO-Revision-Date: 2024-12-19 00:32+0100\n"
+"PO-Revision-Date: 2024-12-19 00:43+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -390,53 +390,44 @@ msgid "Add model"
 msgstr "Añadir modelo"
 
 #: mybooking-used-cars.php:112
-#, fuzzy
 msgid "Used cars Archive Top"
 msgstr "Coches de ocasión Archive Top"
 
 #: mybooking-used-cars.php:114 mybooking-used-cars.php:124
-#, fuzzy
 msgid "Widgets in this area will be shown on campers archives page."
 msgstr ""
 "Los widgets en esta área se mostrarán en la página de archivos de los "
-"campistas."
+"vehículos de ocasión"
 
 #: mybooking-used-cars.php:122
-#, fuzzy
 msgid "Used cars Archive Bottom"
 msgstr "Autos usados Archive Bottom"
 
 #: mybooking-used-cars.php:132
-#, fuzzy
 msgid "Used cars Post"
 msgstr "Autos usados Publicar"
 
 #: mybooking-used-cars.php:134
-#, fuzzy
 msgid "Widgets in this area will be shown on used cars single page."
 msgstr ""
-"Los widgets en esta área se mostrarán en los autos usados de una sola "
-"página."
+"Los widgets en esta área se mostrarán en los vehículos de ocasión de una "
+"sola página."
 
 #. Plugin Name of the plugin/theme
-#, fuzzy
 msgid "Mybooking Used Cars"
-msgstr "Mybooking Coches Usados"
+msgstr "Mybooking Vehículos de ocasión"
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
-#, fuzzy
 msgid "https://mybooking.es"
 msgstr "https://mybooking.es"
 
 #. Description of the plugin/theme
-#, fuzzy
 msgid "Simple plugin to create a Custom Post Type to show used cars pages"
 msgstr ""
 "Plugin simple para crear un tipo de publicación personalizada para mostrar "
-"páginas de autos usados"
+"páginas de ocasión"
 
 #. Author of the plugin/theme
-#, fuzzy
 msgid "Mybooking Team"
 msgstr "Equipo de Mybooking"

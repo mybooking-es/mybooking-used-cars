@@ -8,7 +8,7 @@
  * Plugin Name:       Mybooking Used Cars
  * Plugin URI:        https://mybooking.es
  * Description:       Simple plugin to create a Custom Post Type to show used cars pages
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Mybooking Team
  * Author URI:        https://mybooking.es
  * License:           GPL-2.0+
